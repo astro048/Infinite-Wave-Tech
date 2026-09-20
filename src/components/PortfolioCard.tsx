@@ -1,4 +1,5 @@
 import type { PortfolioType } from '../types/portfolio';
+import '../Styles/PortfolioCard.css';
 
 interface PortfolioCardProps {
     project: PortfolioType;

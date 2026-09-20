@@ -1,4 +1,6 @@
 import { motion, Variants } from 'framer-motion';
+import '../Styles/Hero.css';
+import HeroImage from "../../public/image/Hero Background2.png"
 
 const containerVariants: Variants = {
     hidden: { opacity: 0 },
@@ -61,7 +63,7 @@ const Hero: React.FC = () => {
             {/* Full-width background image */}
             <div className="absolute inset-0 z-0">
                 <img
-                    src="/image/hero-person.png"
+                    src={HeroImage}
                     alt="Hero Background"
                     className="object-cover object-center w-full h-full"
                 />

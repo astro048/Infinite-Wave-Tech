@@ -1,0 +1,198 @@
+.tech-container {
+  padding: 4rem 2rem;
+  overflow: hidden;
+  position: relative;
+  color: white;
+}
+
+.tech-header {
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+.tech-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222020;
+}
+
+.tech-title-highlight {
+  color: #9d4edd;
+}
+
+.tech-subtitle {
+  color: #327bce;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.tech-marquee-wrapper {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: 1.5rem;
+}
+
+.tech-marquee {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1.5rem;
+  min-width: 100%;
+  animation: scrollX 30s linear infinite;
+}
+
+@keyframes scrollX {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.tech-card {
+  background: linear-gradient(145deg, #131b2f, #0d1323);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.tech-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.tech-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.tech-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.tech-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.tech-desc {
+  font-size: 0.875rem;
+  color: #8b949e;
+  line-height: 1.4;
+  flex-grow: 1;
+}
+
+.tech-tag {
+  margin-top: 1rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  width: max-content;
+}
+
+/* Card Glow Effects based on technology */
+.tech-card.react::before,
+.tech-card.nextjs::before,
+.tech-card.nodejs::before,
+.tech-card.express::before,
+.tech-card.mongodb::before,
+.tech-card.tailwindcss::before,
+.tech-card.typescript::before,
+.tech-card.reactnative::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: transparent;
+}
+
+.tech-card.react .tech-icon,
+.tech-card.reactnative .tech-icon {
+  color: #61dafb;
+}
+
+.tech-card.react .tech-tag,
+.tech-card.reactnative .tech-tag {
+  color: #61dafb;
+  border-color: rgba(97, 218, 251, 0.3);
+}
+
+.tech-card.nextjs .tech-icon {
+  color: #fff;
+}
+
+.tech-card.nextjs .tech-tag {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.tech-card.nodejs .tech-icon {
+  color: #339933;
+}
+
+.tech-card.nodejs .tech-tag {
+  color: #339933;
+  border-color: rgba(51, 153, 51, 0.3);
+}
+
+.tech-card.express .tech-icon {
+  color: #f7df1e;
+}
+
+.tech-card.express .tech-tag {
+  color: #f7df1e;
+  border-color: rgba(247, 223, 30, 0.3);
+}
+
+.tech-card.mongodb .tech-icon {
+  color: #47a248;
+}
+
+.tech-card.mongodb .tech-tag {
+  color: #47a248;
+  border-color: rgba(71, 162, 72, 0.3);
+}
+
+.tech-card.tailwindcss .tech-icon {
+  color: #06b6d4;
+}
+
+.tech-card.tailwindcss .tech-tag {
+  color: #06b6d4;
+  border-color: rgba(6, 182, 212, 0.3);
+}
+
+.tech-card.typescript .tech-icon {
+  color: #3178c6;
+}
+
+.tech-card.typescript .tech-tag {
+  color: #3178c6;
+  border-color: rgba(49, 120, 198, 0.3);
+}

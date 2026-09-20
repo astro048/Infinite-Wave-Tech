@@ -1,0 +1,33 @@
+.stroke-text {
+  display: block;
+  width: 100%;
+  line-height: 1;
+}
+
+.stroke-text-hover {
+  cursor: pointer;
+}
+
+.stroke-text-svg {
+  display: block;
+  width: 100%;
+  height: var(--stroke-text-height, 160px);
+}
+
+.stroke-text-stroke {
+  user-select: none;
+}
+
+.stroke-text-fill {
+  user-select: none;
+}
+
+/* Scrollbar hide */
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}

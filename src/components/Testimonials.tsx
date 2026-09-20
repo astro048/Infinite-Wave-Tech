@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { HiStar, HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 import { testimonials } from '../data/testimonials';
+import '../Styles/Testimonials.css';
 
 const Testimonials: React.FC = () => {
     const [current, setCurrent] = useState(0);

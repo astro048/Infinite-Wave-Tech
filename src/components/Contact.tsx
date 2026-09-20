@@ -1,16 +1,18 @@
 import { useState } from 'react';
 import { HiOutlineMail } from 'react-icons/hi';
 import { RainbowButton } from './magicui/rainbow-button';
+import '../Styles/Contact.css';
 
 const Contact: React.FC = () => {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
-        company: '',
+        phone: '',
+        inquiry: '',
         message: '',
     });
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
@@ -83,7 +85,7 @@ const Contact: React.FC = () => {
                                 {/* Name Input */}
                                 <div>
                                     <label htmlFor="name" className="block text-[13px] font-medium text-gray-700 mb-2">
-                                        Full name
+                                        Name <span className="text-red-500">*</span>
                                     </label>
                                     <input
                                         type="text"
@@ -91,43 +93,76 @@ const Contact: React.FC = () => {
                                         name="name"
                                         value={formData.name}
                                         onChange={handleChange}
-                                        placeholder="John Doe"
+                                        placeholder="Your name"
                                         className="w-full bg-white border border-gray-200 rounded-xl px-4 py-3.5 text-sm text-gray-900 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 transition-colors placeholder-gray-400 shadow-sm"
                                         required
                                     />
                                 </div>
 
-                                {/* Email Input */}
-                                <div>
-                                    <label htmlFor="email" className="block text-[13px] font-medium text-gray-700 mb-2">
-                                        Email Address
-                                    </label>
-                                    <input
-                                        type="email"
-                                        id="email"
-                                        name="email"
-                                        value={formData.email}
-                                        onChange={handleChange}
-                                        placeholder="john@example.com"
-                                        className="w-full bg-white border border-gray-200 rounded-xl px-4 py-3.5 text-sm text-gray-900 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 transition-colors placeholder-gray-400 shadow-sm"
-                                        required
-                                    />
+                                {/* Email & Phone Row */}
+                                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+                                    <div>
+                                        <label htmlFor="email" className="block text-[13px] font-medium text-gray-700 mb-2">
+                                            Email <span className="text-red-500">*</span>
+                                        </label>
+                                        <input
+                                            type="email"
+                                            id="email"
+                                            name="email"
+                                            value={formData.email}
+                                            onChange={handleChange}
+                                            placeholder="Your email"
+                                            className="w-full bg-white border border-gray-200 rounded-xl px-4 py-3.5 text-sm text-gray-900 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 transition-colors placeholder-gray-400 shadow-sm"
+                                            required
+                                        />
+                                    </div>
+                                    <div>
+                                        <label htmlFor="phone" className="block text-[13px] font-medium text-gray-700 mb-2">
+                                            Phone <span className="text-red-500">*</span>
+                                        </label>
+                                        <div className="relative">
+                                            <div className="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none text-gray-500">
+                                                <span className="text-base mr-1">🇮🇳</span>
+                                                <span className="text-xs">▼</span>
+                                            </div>
+                                            <input
+                                                type="tel"
+                                                id="phone"
+                                                name="phone"
+                                                value={formData.phone}
+                                                onChange={handleChange}
+                                                placeholder="+91"
+                                                className="w-full bg-white border border-gray-200 rounded-xl pl-[4.5rem] pr-4 py-3.5 text-sm text-gray-900 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 transition-colors placeholder-gray-400 shadow-sm"
+                                                required
+                                            />
+                                        </div>
+                                    </div>
                                 </div>
 
-                                {/* Company Input */}
+                                {/* Inquiry Select */}
                                 <div>
-                                    <label htmlFor="company" className="block text-[13px] font-medium text-gray-700 mb-2">
-                                        Company
+                                    <label htmlFor="inquiry" className="block text-[13px] font-medium text-gray-700 mb-2">
+                                        What Is Inquiry About? <span className="text-red-500">*</span>
                                     </label>
-                                    <input
-                                        type="text"
-                                        id="company"
-                                        name="company"
-                                        value={formData.company}
-                                        onChange={handleChange}
-                                        placeholder="Infinite Wave Tech"
-                                        className="w-full bg-white border border-gray-200 rounded-xl px-4 py-3.5 text-sm text-gray-900 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 transition-colors placeholder-gray-400 shadow-sm"
-                                    />
+                                    <div className="relative">
+                                        <select
+                                            id="inquiry"
+                                            name="inquiry"
+                                            value={formData.inquiry}
+                                            onChange={handleChange}
+                                            className="w-full bg-white border border-gray-200 rounded-xl px-4 py-3.5 text-sm text-gray-400 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 transition-colors appearance-none shadow-sm cursor-pointer"
+                                            required
+                                        >
+                                            <option value="" disabled hidden>Please Select</option>
+                                            <option value="web-development" className="text-gray-900">Web Development</option>
+                                            <option value="mobile-app" className="text-gray-900">Mobile App</option>
+                                            <option value="ui-ux" className="text-gray-900">UI/UX Design</option>
+                                            <option value="other" className="text-gray-900">Other</option>
+                                        </select>
+                                        <div className="absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none">
+                                            <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+                                        </div>
+                                    </div>
                                 </div>
 
                                 {/* Message Input */}
@@ -140,10 +175,9 @@ const Contact: React.FC = () => {
                                         name="message"
                                         value={formData.message}
                                         onChange={handleChange}
-                                        placeholder="Type your message here"
+                                        placeholder="Tell us about your project..."
                                         rows={5}
                                         className="w-full bg-white border border-gray-200 rounded-xl px-4 py-3.5 text-sm text-gray-900 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 transition-colors resize-none placeholder-gray-400 shadow-sm"
-                                        required
                                     />
                                 </div>
 

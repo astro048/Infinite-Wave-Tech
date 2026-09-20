@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { HiMenuAlt3, HiX, HiChevronDown } from 'react-icons/hi';
+import '../Styles/Navbar.css';
 
 const navLinks = [
     { label: 'Home', href: '/', section: 'home' },

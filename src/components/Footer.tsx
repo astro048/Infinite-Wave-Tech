@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { HiOutlineHeart } from 'react-icons/hi';
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
 import GradientText from './GradientText';
+import '../Styles/Footer.css';
 
 const footerLinks = {
     services: [
