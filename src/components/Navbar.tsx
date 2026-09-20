@@ -208,7 +208,7 @@ const Navbar: React.FC = () => {
                                                 key={subItem.label}
                                                 to={subItem.href}
                                                 className={`block px-4 py-2.5 rounded-lg text-sm font-medium transition-colors ${activeLink === subItem.label
-                                                    ? 'text-[#8cc63f] bg-green-50'
+                                                    ? 'text-[#6366F1] bg-indigo-50'
                                                     : 'text-gray-600 hover:text-gray-900'
                                                     }`}
                                                 onClick={() => handleNavClick(subItem)}
@@ -222,7 +222,7 @@ const Navbar: React.FC = () => {
                                 <Link
                                     to={link.href}
                                     className={`block px-4 py-2.5 rounded-lg text-sm font-medium transition-colors ${activeLink === link.label
-                                        ? 'text-[#8cc63f] bg-green-50'
+                                        ? 'text-[#6366F1] bg-indigo-50'
                                         : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
                                         }`}
                                     onClick={() => handleNavClick(link)}

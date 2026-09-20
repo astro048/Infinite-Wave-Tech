@@ -65,12 +65,12 @@ const Hero: React.FC = () => {
                 <img
                     src={HeroImage}
                     alt="Hero Background"
-                    className="object-cover object-center w-full h-full"
+                    className="object-cover object-[75%_center] md:object-center w-full h-full"
                 />
-                {/* Dark overlay — stronger on left, lighter on right */}
-                <div className="absolute inset-0 bg-gradient-to-r from-[#0d0f1e]/90 via-[#0d0f1e]/70 to-[#0d0f1e]/30" />
+                {/* Dark overlay — stronger on left/top, lighter on right/bottom */}
+                <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-[#0d0f1e]/95 via-[#0d0f1e]/80 md:via-[#0d0f1e]/70 to-[#0d0f1e]/40 md:to-[#0d0f1e]/30" />
                 {/* Extra subtle purple/indigo tint */}
-                <div className="absolute inset-0 bg-gradient-to-br from-indigo-900/20 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-br from-indigo-900/40 md:from-indigo-900/20 via-transparent to-transparent" />
             </div>
 
             {/* Content */}
