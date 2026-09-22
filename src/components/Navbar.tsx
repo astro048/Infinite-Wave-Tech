@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { HiMenuAlt3, HiX, HiChevronDown } from 'react-icons/hi';
 import '../Styles/Navbar.css';
@@ -10,40 +10,40 @@ const navLinks = [
         label: 'Industries',
         href: '#',
         dropdown: [
-            { label: 'Banking', href: '/#banking' },
-            { label: 'Capital Markets', href: '/#capital-markets' },
-            { label: 'Enterprise Technology', href: '/#enterprise-technology' },
-            { label: 'Healthcare', href: '/#healthcare' },
-            { label: 'Higher Education', href: '/#higher-education' },
-            { label: 'Logistics', href: '/#logistics' },
-            { label: 'Manufacturing', href: '/#manufacturing' }
+            { label: 'Banking', href: '/industries/banking' },
+            { label: 'Capital Markets', href: '/industries/capital-markets' },
+            { label: 'Enterprise Technology', href: '/industries/enterprise-technology' },
+            { label: 'Healthcare', href: '/industries/healthcare' },
+            { label: 'Logistics', href: '/industries/logistics' },
+            { label: 'Manufacturing', href: '/industries/manufacturing' }
         ]
     },
     {
-        label: 'IT Services',
+        label: 'Services',
         href: '#',
         dropdown: [
-            { label: 'Managed IT', href: '/#managed-it' },
-            { label: 'IT Support', href: '/#it-support' },
-            { label: 'IT Consultancy', href: '/#it-consultancy' },
-            { label: 'Cloud Computing', href: '/#cloud-computing' },
-            { label: 'Cyber Security', href: '/#cyber-security' },
-            { label: 'Custom Software', href: '/#custom-software' },
-            { label: 'Mobile Application', href: '/#mobile-application' },
-            { label: 'Web Application', href: '/#web-application' },
-            { label: 'AI & DevOps', href: '/#ai-devops' }
+            { label: 'Managed IT', href: '/services/managed-it' },
+            { label: 'IT Support', href: '/services/it-support' },
+            { label: 'IT Consultancy', href: '/services/it-consultancy' },
+            { label: 'Cloud Computing', href: '/services/cloud-computing' },
+            { label: 'Cyber Security', href: '/services/cyber-security' },
+            { label: 'Custom Software', href: '/services/custom-software' },
+            { label: 'Mobile Application', href: '/services/mobile-application' },
+            { label: 'Web Application', href: '/services/web-application' },
+            { label: 'AI & DevOps', href: '/services/ai-devops' }
         ]
     },
+    { label: 'Technology', href: '/technology' },
     { label: 'Careers', href: '/#careers', section: 'careers' },
 ];
 
 const DropdownMenu = ({
     item,
-    activeLink,
+    currentPath,
     handleNavClick
 }: {
     item: typeof navLinks[0],
-    activeLink: string,
+    currentPath: string,
     handleNavClick: (link: any) => void
 }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -60,7 +60,7 @@ const DropdownMenu = ({
         }, 200);
     };
 
-    const isItemActive = activeLink === item.label || item.dropdown?.some(sub => activeLink === sub.label);
+    const isItemActive = item.dropdown?.some(sub => currentPath === sub.href);
 
     return (
         <div
@@ -92,7 +92,7 @@ const DropdownMenu = ({
                             key={subItem.label}
                             to={subItem.href}
                             className={`block px-5 py-2.5 text-[15px] font-medium transition-colors
-                                ${activeLink === subItem.label ? 'text-[#6366F1]' : 'text-[#374151] hover:text-[#3416f2] hover:bg-gray-50'}
+                                ${currentPath === subItem.href ? 'text-[#6366F1] font-semibold bg-indigo-50/50' : 'text-[#374151] hover:text-[#3416f2] hover:bg-gray-50'}
                             `}
                             onClick={() => {
                                 handleNavClick(subItem);
@@ -109,13 +109,12 @@ const DropdownMenu = ({
 };
 
 const Navbar: React.FC = () => {
-    const [activeLink, setActiveLink] = useState('Home');
     const [mobileOpen, setMobileOpen] = useState(false);
     const location = useLocation();
-    const isHome = location.pathname === '/';
+    const currentPath = location.pathname;
+    const isHome = currentPath === '/';
 
     const handleNavClick = (link: any) => {
-        setActiveLink(link.label);
         setMobileOpen(false);
 
         if (isHome && link.section) {
@@ -149,15 +148,17 @@ const Navbar: React.FC = () => {
                 <div className="items-center hidden gap-2 lg:flex">
                     {navLinks.map((link) => {
                         if (link.dropdown) {
-                            return <DropdownMenu key={link.label} item={link} activeLink={activeLink} handleNavClick={handleNavClick} />;
+                            return <DropdownMenu key={link.label} item={link} currentPath={currentPath} handleNavClick={handleNavClick} />;
                         }
+
+                        const isLinkActive = currentPath === link.href;
 
                         return (
                             <Link
                                 key={link.label}
                                 to={link.href}
-                                className={`relative px-3.5 py-2 text-[15px] font-medium transition-colors rounded-lg ${activeLink === link.label
-                                    ? 'text-[#6366F1]'
+                                className={`relative px-3.5 py-2 text-[15px] font-medium transition-colors rounded-lg ${isLinkActive
+                                    ? 'text-[#6366F1] font-semibold'
                                     : 'text-[#1F2937] hover:text-[#3416f2]'
                                     }`}
                                 onClick={() => handleNavClick(link)}
@@ -207,8 +208,8 @@ const Navbar: React.FC = () => {
                                             <Link
                                                 key={subItem.label}
                                                 to={subItem.href}
-                                                className={`block px-4 py-2.5 rounded-lg text-sm font-medium transition-colors ${activeLink === subItem.label
-                                                    ? 'text-[#6366F1] bg-indigo-50'
+                                                className={`block px-4 py-2.5 rounded-lg text-sm font-medium transition-colors ${currentPath === subItem.href
+                                                    ? 'text-[#6366F1] bg-indigo-50 font-semibold'
                                                     : 'text-gray-600 hover:text-gray-900'
                                                     }`}
                                                 onClick={() => handleNavClick(subItem)}
@@ -221,8 +222,8 @@ const Navbar: React.FC = () => {
                             ) : (
                                 <Link
                                     to={link.href}
-                                    className={`block px-4 py-2.5 rounded-lg text-sm font-medium transition-colors ${activeLink === link.label
-                                        ? 'text-[#6366F1] bg-indigo-50'
+                                    className={`block px-4 py-2.5 rounded-lg text-sm font-medium transition-colors ${currentPath === link.href
+                                        ? 'text-[#6366F1] bg-indigo-50 font-semibold'
                                         : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
                                         }`}
                                     onClick={() => handleNavClick(link)}

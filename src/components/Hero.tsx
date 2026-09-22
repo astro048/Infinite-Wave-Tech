@@ -1,6 +1,6 @@
 import { motion, Variants } from 'framer-motion';
 import '../Styles/Hero.css';
-import HeroImage from "../../public/image/Hero Background2.png"
+const HeroImage = "/image/Hero Background2.png";
 
 const containerVariants: Variants = {
     hidden: { opacity: 0 },

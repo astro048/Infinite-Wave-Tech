@@ -1,0 +1,607 @@
+/* Banking Page - Extracted Notasco Layout with Infinite Wave Tech Color Theme */
+
+.banking-page-layout {
+  width: 100%;
+  color: var(--color-text-gray-900);
+  background-color: var(--color-bg-white);
+  overflow-x: hidden;
+  font-family: var(--font-family-sans);
+}
+
+/* 1. Hero Section */
+.b-hero {
+  position: relative;
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: #0b1120;
+}
+
+.b-hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.42;
+  filter: brightness(0.85);
+}
+
+.b-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(11, 17, 32, 0.94) 0%, rgba(11, 17, 32, 0.75) 45%, rgba(11, 17, 32, 0.3) 100%);
+}
+
+.b-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.b-hero-content {
+  max-width: 680px;
+  padding: 5.5rem 0;
+}
+
+.b-pill-badge {
+  display: inline-block;
+  padding: 0.35rem 1rem;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #e0e7ff;
+  border-radius: 9999px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  margin-bottom: 1.25rem;
+  backdrop-filter: blur(8px);
+}
+
+.b-pill-badge-light {
+  background: #eef2ff;
+  border: 1px solid var(--color-border-indigo-200);
+  color: var(--color-primary);
+}
+
+.b-hero-title {
+  font-size: clamp(2.4rem, 4.5vw, 3.75rem);
+  font-weight: 800;
+  line-height: 1.15;
+  color: #ffffff;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.b-hero-desc {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: #cbd5e1;
+  max-width: 600px;
+}
+
+/* 2. Overview Section (Light) */
+.b-overview-section {
+  padding: 5.5rem 0 4.5rem;
+  background-color: #ffffff;
+}
+
+.b-overview-header {
+  max-width: 780px;
+  margin-bottom: 3.5rem;
+}
+
+.b-overview-title {
+  font-size: clamp(1.85rem, 3.2vw, 2.5rem);
+  font-weight: 800;
+  color: var(--color-text-gray-900);
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  margin: 0.875rem 0 1.25rem;
+}
+
+.b-overview-lead {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: var(--color-text-gray-600);
+}
+
+.b-grid-4 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .b-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .b-grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.b-overview-card {
+  background: #ffffff;
+  border: 1px solid var(--color-border-gray-200);
+  border-radius: var(--radius-xl);
+  padding: 2rem 1.625rem;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-base);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+.b-overview-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-border-indigo-200);
+  box-shadow: 0 12px 28px rgba(79, 70, 229, 0.08);
+}
+
+.b-card-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-text-gray-900);
+  margin-bottom: 0.75rem;
+  line-height: 1.35;
+}
+
+.b-card-desc {
+  font-size: 0.90625rem;
+  line-height: 1.65;
+  color: var(--color-text-gray-600);
+}
+
+/* 3. Industry Sectors We Served (Dark Section) */
+.b-sectors-section {
+  background-color: #080c16;
+  color: #ffffff;
+  padding: 5.5rem 0 6rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.b-sectors-header-row {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3.5rem;
+}
+
+@media (min-width: 1024px) {
+  .b-sectors-header-row {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+}
+
+.b-sectors-title-block {
+  max-width: 600px;
+}
+
+.b-sectors-title {
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0.875rem 0 1rem;
+  line-height: 1.2;
+}
+
+.b-sectors-lead {
+  font-size: 1.0625rem;
+  color: #94a3b8;
+  line-height: 1.7;
+}
+
+.b-sectors-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.b-btn-dark-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.625rem;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-size: 0.90625rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all var(--transition-base);
+}
+
+.b-btn-dark-outline:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+  color: #ffffff;
+}
+
+.b-btn-accent {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.625rem;
+  border-radius: 9999px;
+  background-color: var(--color-accent);
+  color: #0b1120;
+  font-size: 0.90625rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all var(--transition-base);
+}
+
+.b-btn-accent:hover {
+  background-color: var(--color-accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(130, 207, 75, 0.35);
+  color: #0b1120;
+}
+
+.b-sectors-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+}
+
+@media (min-width: 640px) {
+  .b-sectors-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .b-sectors-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.b-sector-card {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2rem;
+  background-color: #131b2e;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all var(--transition-base);
+}
+
+.b-sector-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(99, 102, 241, 0.5);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
+}
+
+.b-sector-bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.b-sector-card:hover .b-sector-bg-img {
+  transform: scale(1.06);
+}
+
+.b-sector-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(11, 17, 32, 0.1) 0%, rgba(11, 17, 32, 0.6) 40%, rgba(11, 17, 32, 0.95) 100%);
+}
+
+.b-sector-card-content {
+  position: relative;
+  z-index: 10;
+}
+
+.b-sector-icon-floating {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  z-index: 10;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: var(--radius-lg);
+  background: rgba(11, 17, 32, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 1.25rem;
+  backdrop-filter: blur(8px);
+}
+
+.b-sector-card-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.625rem;
+}
+
+.b-sector-card-desc {
+  font-size: 0.90625rem;
+  line-height: 1.6;
+  color: #cbd5e1;
+}
+
+/* 4. Benefits / Services (4 Columns with Green/Theme Accent Circle Icons) */
+.b-benefits-section {
+  padding: 5.5rem 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--color-border-gray-100);
+}
+
+.b-benefits-header {
+  max-width: 800px;
+  margin-bottom: 3.5rem;
+}
+
+.b-benefits-title {
+  font-size: clamp(1.85rem, 3.2vw, 2.45rem);
+  font-weight: 800;
+  color: var(--color-text-gray-900);
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  margin-top: 0.875rem;
+}
+
+.b-benefits-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+}
+
+@media (min-width: 640px) {
+  .b-benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .b-benefits-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.b-benefit-card {
+  padding: 2.25rem 1.625rem;
+  background: #ffffff;
+  border: 1px solid var(--color-border-gray-200);
+  border-radius: var(--radius-xl);
+  transition: all var(--transition-base);
+}
+
+.b-benefit-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-border-indigo-200);
+  box-shadow: 0 12px 28px rgba(79, 70, 229, 0.07);
+}
+
+.b-benefit-icon-box {
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+  color: #0b1120;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 6px 16px rgba(130, 207, 75, 0.25);
+  transition: transform var(--transition-base);
+}
+
+.b-benefit-card:hover .b-benefit-icon-box {
+  transform: scale(1.08) rotate(6deg);
+}
+
+.b-benefit-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-text-gray-900);
+  margin-bottom: 0.75rem;
+}
+
+.b-benefit-desc {
+  font-size: 0.90625rem;
+  line-height: 1.65;
+  color: var(--color-text-gray-600);
+}
+
+/* 5. Advisory / 3 Key Areas Section */
+.b-advisory-section {
+  padding: 5.5rem 0 6rem;
+  background-color: #f8fafc;
+}
+
+.b-advisory-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3.5rem;
+  align-items: flex-start;
+}
+
+@media (min-width: 1024px) {
+  .b-advisory-grid {
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+}
+
+.b-advisory-left {
+  max-width: 480px;
+}
+
+.b-advisory-title {
+  font-size: clamp(2rem, 3.5vw, 2.6rem);
+  font-weight: 800;
+  color: var(--color-text-gray-900);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin: 0.875rem 0 1.25rem;
+}
+
+.b-advisory-desc {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: var(--color-text-gray-600);
+}
+
+.b-advisory-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+}
+
+.b-advisory-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.b-advisory-icon-circle {
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+  color: #0b1120;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  flex-shrink: 0;
+  box-shadow: 0 6px 16px rgba(130, 207, 75, 0.25);
+}
+
+.b-advisory-item-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text-gray-900);
+  margin-bottom: 0.5rem;
+}
+
+.b-advisory-item-desc {
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: var(--color-text-gray-600);
+}
+
+/* 6. Expertise & Stats Banner (Dark Half / Image Half) */
+.b-expertise-banner {
+  background-color: #080c16;
+  color: #ffffff;
+  overflow: hidden;
+  border-radius: var(--radius-2xl);
+  margin: 3rem auto 6rem;
+  max-width: 1200px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.b-expertise-inner {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 1024px) {
+  .b-expertise-inner {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+}
+
+.b-expertise-text {
+  padding: 4.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 640px) {
+  .b-expertise-text {
+    padding: 3rem 1.5rem;
+  }
+}
+
+.b-expertise-title {
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0.875rem 0 1.25rem;
+  line-height: 1.2;
+}
+
+.b-expertise-desc {
+  font-size: 1.0625rem;
+  color: #cbd5e1;
+  line-height: 1.7;
+  margin-bottom: 3rem;
+  max-width: 520px;
+}
+
+.b-expertise-stats-row {
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+  flex-wrap: wrap;
+}
+
+.b-stat-number {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.03em;
+}
+
+.b-stat-sublabel {
+  font-size: 0.875rem;
+  color: #94a3b8;
+  font-weight: 500;
+  max-width: 140px;
+  line-height: 1.4;
+}
+
+.b-expertise-image-wrap {
+  position: relative;
+  min-height: 360px;
+}
+
+.b-expertise-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.b-expertise-img-fallback {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #1e1b4b 0%, #0f172a 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 4rem;
+}

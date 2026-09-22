@@ -1,0 +1,373 @@
+/* Enterprise Technology Page Specific Styles */
+.et-page-container {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: var(--font-family-sans);
+}
+
+.et-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Base elements */
+.et-tag {
+  display: inline-block;
+  background-color: var(--color-bg-gray);
+  color: var(--color-text-gray-900);
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.25rem 1rem;
+  border-radius: 9999px;
+  margin-bottom: 1rem;
+}
+.et-tag-dark {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--color-text-white);
+}
+
+.et-section-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-text-gray-900);
+  margin-bottom: 3rem;
+  max-width: 800px;
+}
+.et-text-white {
+  color: var(--color-text-white);
+}
+
+/* 1. Hero / Industries Section */
+.et-hero-section {
+  background-color: #0b0f19; /* dark theme */
+  color: var(--color-text-white);
+  padding: 6rem 1.5rem;
+}
+
+.et-hero-content {
+  max-width: 1280px;
+  margin: 0 auto 4rem;
+}
+
+.et-hero-text {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-bottom: 2rem;
+  color: var(--color-text-gray-50);
+}
+
+.et-hero-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.et-btn-outline {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 9999px;
+  color: var(--color-text-white);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all var(--transition-base);
+}
+.et-btn-outline:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.et-btn-primary {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-accent);
+  color: var(--color-text-gray-900);
+  border-radius: 9999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all var(--transition-base);
+}
+.et-btn-primary:hover {
+  background-color: var(--color-accent-hover);
+}
+
+.et-hero-cards {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.et-hero-card {
+  position: relative;
+  height: 350px;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+}
+
+.et-hero-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.et-hero-card:hover .et-hero-card-img {
+  transform: scale(1.05);
+}
+
+.et-hero-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.1) 100%);
+  z-index: 1;
+}
+
+.et-hero-card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  z-index: 2;
+}
+
+.et-hero-card-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+.et-hero-card-content p {
+  color: var(--color-text-gray-300);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* 2. Benefits Section */
+.et-benefits-section {
+  padding: 6rem 0;
+  background-color: #fafafa;
+}
+
+.et-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.et-benefit-card {
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border: 1px solid var(--color-border-gray-100);
+  border-radius: var(--radius-2xl);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  /* The custom clip-path for that angled edge look in the original image */
+  clip-path: polygon(15% 0, 100% 0, 100% 85%, 85% 100%, 0 100%, 0 15%);
+  transition: all var(--transition-base);
+  height: 100%;
+}
+
+.et-benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.et-icon-container {
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--color-accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.et-icon-container svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--color-bg-white);
+}
+
+.et-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--color-text-gray-900);
+}
+
+.et-card-text {
+  color: var(--color-text-gray-600);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* 3. Delivery Section */
+.et-delivery-section {
+  padding: 6rem 0;
+  background-color: var(--color-bg-white);
+}
+
+.et-delivery-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+.et-delivery-desc {
+  font-size: 1.1rem;
+  color: var(--color-text-gray-600);
+  line-height: 1.6;
+  max-width: 400px;
+}
+
+.et-timeline {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+/* Vertical line */
+.et-timeline::before {
+  content: '';
+  position: absolute;
+  left: 3rem; /* adjusted for icon center */
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: var(--color-border-gray-200);
+  z-index: 0;
+}
+
+.et-timeline-item {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+  z-index: 1;
+}
+.et-timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.et-timeline-icon {
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--color-accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-right: 2rem;
+  box-shadow: 0 0 0 8px var(--color-bg-white); /* creates gap effect */
+}
+
+.et-timeline-icon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--color-bg-white);
+}
+
+.et-timeline-content {
+  padding-top: 0.5rem;
+}
+
+.et-timeline-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: var(--color-text-gray-900);
+}
+
+.et-timeline-text {
+  color: var(--color-text-gray-600);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* 4. Expertise Section */
+.et-expertise-section {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #11151c; /* dark theme */
+  min-height: 600px;
+}
+
+.et-expertise-left {
+  flex: 1;
+  padding: 6rem 1.5rem 6rem 8%;
+  min-width: 320px;
+}
+
+.et-expertise-desc {
+  color: var(--color-text-gray-300);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 500px;
+  margin-bottom: 3rem;
+}
+
+.et-stats-container {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.et-stat-value {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--color-text-white);
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.et-stat-label {
+  color: var(--color-text-gray-400);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.et-expertise-right {
+  flex: 1;
+  min-width: 320px;
+  position: relative;
+}
+
+.et-expertise-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-height: 400px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .et-delivery-split {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .et-section-title {
+    font-size: 1.75rem;
+  }
+  .et-hero-section {
+    padding: 4rem 1.5rem;
+  }
+  .et-hero-actions {
+    flex-direction: column;
+  }
+  .et-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+  .et-expertise-left {
+    padding: 4rem 1.5rem;
+  }
+  .et-stat-value {
+    font-size: 2.5rem;
+  }
+}
