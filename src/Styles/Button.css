@@ -2,20 +2,20 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 8px;
   border-radius: 9999px;
   font-weight: 600;
   transition: all 0.3s ease;
 }
 
 .button-icon {
-  width: 0.875rem;
-  height: 0.875rem;
+  width: 14px;
+  height: 14px;
   transition: transform 0.2s ease;
 }
 
 .button:hover .button-icon {
-  transform: translateX(0.125rem);
+  transform: translateX(2px);
 }
 
 .button-primary {
@@ -51,18 +51,18 @@
 }
 
 .button-sm {
-  padding: 0.5rem 1rem;
-  font-size: 0.75rem;
+  padding: 8px 16px;
+  font-size: 12px;
 }
 
 .button-md {
-  padding: 0.75rem 1.5rem;
-  font-size: 0.875rem;
+  padding: 12px 24px;
+  font-size: 14px;
 }
 
 .button-lg {
-  padding: 0.875rem 1.75rem;
-  font-size: 0.875rem;
+  padding: 14px 28px;
+  font-size: 14px;
 }
 
 .button-full {

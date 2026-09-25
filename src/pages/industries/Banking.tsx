@@ -13,7 +13,8 @@ import {
   HiOutlineCode,
   HiOutlineDatabase,
   HiOutlineSparkles,
-  HiOutlineChartPie
+  HiOutlineChartPie,
+  HiOutlineUserGroup
 } from 'react-icons/hi';
 
 const Banking: React.FC = () => {
@@ -22,7 +23,7 @@ const Banking: React.FC = () => {
       {/* 1. Hero Section */}
       <section className="b-hero">
         <img
-          src="/image/banking_hero.jpg"
+          src="https://www.jurisiti.com/wp-content/uploads/2025/05/Banking-and-Financial-Services.jpeg"
           alt="Banking and Financial Executives"
           className="b-hero-bg"
           onError={(e) => {
@@ -136,7 +137,7 @@ const Banking: React.FC = () => {
             {/* Sector 1: Retail Banking */}
             <div className="b-sector-card">
               <img
-                src="/image/banking_hero.jpg"
+                src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800"
                 alt="Retail Banking"
                 className="b-sector-bg-img"
               />
@@ -155,7 +156,7 @@ const Banking: React.FC = () => {
             {/* Sector 2: Cards and Payments */}
             <div className="b-sector-card">
               <img
-                src="/image/Hero Background2.png"
+                src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&q=80&w=800"
                 alt="Cards and Payments"
                 className="b-sector-bg-img"
               />
@@ -174,7 +175,7 @@ const Banking: React.FC = () => {
             {/* Sector 3: Corporate Banking */}
             <div className="b-sector-card">
               <img
-                src="/image/Hero Background.png"
+                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800"
                 alt="Corporate Banking"
                 className="b-sector-bg-img"
               />
@@ -248,7 +249,7 @@ const Banking: React.FC = () => {
       </section>
 
       {/* 5. Advisory / 3 Key Areas Section */}
-      <section className="b-advisory-section">
+      {/* <section className="b-advisory-section">
         <div className="b-container">
           <div className="b-advisory-grid">
             <div className="b-advisory-left">
@@ -300,35 +301,127 @@ const Banking: React.FC = () => {
             </div>
           </div>
         </div>
+      </section> */}
+      {/* 5. Advisory / Key Areas Section */}
+      <section className="b-advisory-section">
+        <div className="b-container">
+
+          <div className="b-advisory-split">
+            <div className="b-advisory-left">
+              <span className="b-pill-badge b-pill-badge-light">
+                Delivery
+              </span>
+
+              <h2 className="b-advisory-main-title">
+                Transform your technology by focusing on 3 key areas
+              </h2>
+
+              <p className="b-advisory-main-desc">
+                From healthcare to education, we provide scalable, secure, and cost-efficient IT solutions to help your business thrive.
+              </p>
+            </div>
+
+            <div className="b-advisory-right">
+              <div className="b-advisory-timeline">
+
+            {/* Item 1 */}
+            <div className="b-advisory-item">
+              <div className="b-advisory-icon-wrapper">
+                <div className="b-advisory-icon-circle">
+                  <HiOutlineDatabase />
+                </div>
+                <span className="b-advisory-line"></span>
+              </div>
+
+              <div className="b-advisory-content">
+                <h3 className="b-advisory-item-title">
+                  Data Transformation
+                </h3>
+
+                <p className="b-advisory-item-desc">
+                  Harness data's full potential through analytics, AI, and insights,
+                  fuelling informed decisions and enhancing your software
+                  capabilities.
+                </p>
+              </div>
+            </div>
+
+            {/* Item 2 */}
+            <div className="b-advisory-item">
+              <div className="b-advisory-icon-wrapper">
+                <div className="b-advisory-icon-circle">
+                  <HiOutlineSparkles />
+                </div>
+                <span className="b-advisory-line"></span>
+              </div>
+
+              <div className="b-advisory-content">
+                <h3 className="b-advisory-item-title">
+                  Digital Enablement
+                </h3>
+
+                <p className="b-advisory-item-desc">
+                  Modernize processes, streamline workflows, and elevate user
+                  experiences by integrating cutting-edge digital technologies
+                  into your software solutions.
+                </p>
+              </div>
+            </div>
+
+            {/* Item 3 */}
+            <div className="b-advisory-item b-advisory-last">
+              <div className="b-advisory-icon-wrapper">
+                <div className="b-advisory-icon-circle">
+                  <HiOutlineUserGroup />
+                </div>
+              </div>
+
+              <div className="b-advisory-content">
+                <h3 className="b-advisory-item-title">
+                  Innovation Partnership
+                </h3>
+
+                <p className="b-advisory-item-desc">
+                  Collaborate with us to explore emerging technologies, co-create
+                  innovative solutions, and drive sustained growth in a dynamic
+                  software landscape.
+                </p>
+              </div>
+            </div>
+
+          </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* 6. Expertise & Stats Banner (Dark Half / Image Half) */}
-      <section className="px-4">
+      <section className="expertise">
         <div className="b-expertise-banner">
           <div className="b-expertise-inner">
             <div className="b-expertise-text">
-              <span className="b-pill-badge">Expertise & Certification</span>
+              <span className="b-pill-badge-dark">Benefits to bank on</span>
               <h2 className="b-expertise-title">Our banking expertise</h2>
               <p className="b-expertise-desc">
-                We empower leaders across corporate and investment banking to unlock new revenue channels, automate compliance, and safeguard millions of transactions.
+                Notasco Technologies, a dynamic joint venture between Linethemes and Themeforest, harnesses extensive banking industry insight to revolutionize financial institutions through digital technology deployment.
               </p>
 
               <div className="b-expertise-stats-row">
                 <div>
                   <div className="b-stat-number">300+</div>
-                  <div className="b-stat-sublabel">Financial services firms assisted</div>
+                  <div className="b-stat-sublabel">Financial services firms worldwide</div>
                 </div>
 
                 <div>
                   <div className="b-stat-number">7/10</div>
-                  <div className="b-stat-sublabel">The top largest banks worldwide</div>
+                  <div className="b-stat-sublabel">The top largest banks worldwide.</div>
                 </div>
               </div>
             </div>
 
             <div className="b-expertise-image-wrap">
               <img
-                src="/image/banking_hero.jpg"
+                src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1920&auto=format&fit=crop&q=80"
                 alt="Financial Calculator and Documents"
                 className="b-expertise-img"
               />

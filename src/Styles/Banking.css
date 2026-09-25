@@ -1,4 +1,7 @@
-/* Banking Page - Extracted Notasco Layout with Infinite Wave Tech Color Theme */
+/* =========================================================
+   Banking Page
+   Infinite Wave Tech Theme
+   ========================================================= */
 
 .banking-page-layout {
   width: 100%;
@@ -8,7 +11,11 @@
   font-family: var(--font-family-sans);
 }
 
-/* 1. Hero Section */
+
+/* =========================================================
+   1. HERO SECTION
+   ========================================================= */
+
 .b-hero {
   position: relative;
   min-height: 520px;
@@ -32,7 +39,11 @@
 .b-hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(11, 17, 32, 0.94) 0%, rgba(11, 17, 32, 0.75) 45%, rgba(11, 17, 32, 0.3) 100%);
+  background:
+    linear-gradient(90deg,
+      rgba(11, 17, 32, 0.94) 0%,
+      rgba(11, 17, 32, 0.75) 45%,
+      rgba(11, 17, 32, 0.3) 100%);
 }
 
 .b-container {
@@ -49,6 +60,11 @@
   padding: 5.5rem 0;
 }
 
+
+/* =========================================================
+   BADGES
+   ========================================================= */
+
 .b-pill-badge {
   display: inline-block;
   padding: 0.35rem 1rem;
@@ -63,11 +79,28 @@
   backdrop-filter: blur(8px);
 }
 
+.b-pill-badge-dark {
+  display: inline-block;
+  padding: 0.35rem 1rem;
+  background: #2a2d34;
+  color: #ffffff;
+  border-radius: 9999px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  margin-bottom: 1.25rem;
+}
+
 .b-pill-badge-light {
   background: #eef2ff;
   border: 1px solid var(--color-border-indigo-200);
   color: var(--color-primary);
 }
+
+
+/* =========================================================
+   HERO TYPOGRAPHY
+   ========================================================= */
 
 .b-hero-title {
   font-size: clamp(2.4rem, 4.5vw, 3.75rem);
@@ -85,7 +118,11 @@
   max-width: 600px;
 }
 
-/* 2. Overview Section (Light) */
+
+/* =========================================================
+   2. OVERVIEW SECTION
+   ========================================================= */
+
 .b-overview-section {
   padding: 5.5rem 0 4.5rem;
   background-color: #ffffff;
@@ -111,22 +148,13 @@
   color: var(--color-text-gray-600);
 }
 
+
+/* Overview Grid */
+
 .b-grid-4 {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
-}
-
-@media (min-width: 640px) {
-  .b-grid-4 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .b-grid-4 {
-    grid-template-columns: repeat(4, 1fr);
-  }
 }
 
 .b-overview-card {
@@ -160,7 +188,11 @@
   color: var(--color-text-gray-600);
 }
 
-/* 3. Industry Sectors We Served (Dark Section) */
+
+/* =========================================================
+   3. INDUSTRY SECTORS
+   ========================================================= */
+
 .b-sectors-section {
   background-color: #080c16;
   color: #ffffff;
@@ -174,14 +206,6 @@
   flex-direction: column;
   gap: 2rem;
   margin-bottom: 3.5rem;
-}
-
-@media (min-width: 1024px) {
-  .b-sectors-header-row {
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: space-between;
-  }
 }
 
 .b-sectors-title-block {
@@ -201,6 +225,9 @@
   color: #94a3b8;
   line-height: 1.7;
 }
+
+
+/* Sector Buttons */
 
 .b-sectors-actions {
   display: flex;
@@ -252,22 +279,13 @@
   color: #0b1120;
 }
 
+
+/* Sector Grid */
+
 .b-sectors-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.75rem;
-}
-
-@media (min-width: 640px) {
-  .b-sectors-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .b-sectors-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
 
 .b-sector-card {
@@ -306,7 +324,11 @@
 .b-sector-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(11, 17, 32, 0.1) 0%, rgba(11, 17, 32, 0.6) 40%, rgba(11, 17, 32, 0.95) 100%);
+  background:
+    linear-gradient(180deg,
+      rgba(11, 17, 32, 0.1) 0%,
+      rgba(11, 17, 32, 0.6) 40%,
+      rgba(11, 17, 32, 0.95) 100%);
 }
 
 .b-sector-card-content {
@@ -319,16 +341,22 @@
   top: 1.5rem;
   left: 1.5rem;
   z-index: 10;
+
   width: 2.75rem;
   height: 2.75rem;
+
   border-radius: var(--radius-lg);
+
   background: rgba(11, 17, 32, 0.65);
   border: 1px solid rgba(255, 255, 255, 0.2);
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   color: #ffffff;
   font-size: 1.25rem;
+
   backdrop-filter: blur(8px);
 }
 
@@ -345,7 +373,11 @@
   color: #cbd5e1;
 }
 
-/* 4. Benefits / Services (4 Columns with Green/Theme Accent Circle Icons) */
+
+/* =========================================================
+   4. BENEFITS / SERVICES
+   ========================================================= */
+
 .b-benefits-section {
   padding: 5.5rem 0;
   background-color: #ffffff;
@@ -372,18 +404,6 @@
   gap: 1.75rem;
 }
 
-@media (min-width: 640px) {
-  .b-benefits-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .b-benefits-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
 .b-benefit-card {
   padding: 2.25rem 1.625rem;
   background: #ffffff;
@@ -402,14 +422,19 @@
   width: 3.25rem;
   height: 3.25rem;
   border-radius: 50%;
+
   background-color: var(--color-accent);
   color: #0b1120;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   font-size: 1.35rem;
   margin-bottom: 1.5rem;
+
   box-shadow: 0 6px 16px rgba(130, 207, 75, 0.25);
+
   transition: transform var(--transition-base);
 }
 
@@ -430,93 +455,186 @@
   color: var(--color-text-gray-600);
 }
 
-/* 5. Advisory / 3 Key Areas Section */
+
+/* =========================================================
+   5. ADVISORY SECTION
+   Reference-style vertical timeline
+   ========================================================= */
+
 .b-advisory-section {
-  padding: 5.5rem 0 6rem;
-  background-color: #f8fafc;
+  padding: 6rem 0 6.5rem;
+  background-color: #ffffff;
 }
 
-.b-advisory-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 3.5rem;
+
+/* Advisory Split Layout */
+
+.b-advisory-split {
+  display: flex;
+  flex-direction: row;
+  gap: 64px;
   align-items: flex-start;
-}
-
-@media (min-width: 1024px) {
-  .b-advisory-grid {
-    grid-template-columns: 0.9fr 1.1fr;
-  }
 }
 
 .b-advisory-left {
   max-width: 480px;
 }
 
-.b-advisory-title {
-  font-size: clamp(2rem, 3.5vw, 2.6rem);
-  font-weight: 800;
-  color: var(--color-text-gray-900);
+.b-advisory-main-title {
+  margin: 1rem 0 1.25rem;
+
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
   line-height: 1.2;
-  letter-spacing: -0.02em;
-  margin: 0.875rem 0 1.25rem;
+  font-weight: 800;
+
+  letter-spacing: -0.025em;
+
+  color: var(--color-text-gray-900);
 }
 
-.b-advisory-desc {
-  font-size: 1.0625rem;
+.b-advisory-main-desc {
+  max-width: 700px;
+  margin: 0 auto;
+
+  font-size: 1.05rem;
   line-height: 1.75;
+
   color: var(--color-text-gray-600);
 }
 
-.b-advisory-list {
-  display: flex;
-  flex-direction: column;
-  gap: 2.25rem;
+
+/* Advisory Timeline */
+
+.b-advisory-timeline {
+  max-width: 980px;
+  margin: 0 auto;
 }
+
+
+/* Individual timeline item */
 
 .b-advisory-item {
   display: flex;
-  align-items: flex-start;
-  gap: 1.5rem;
+  align-items: stretch;
+  margin-bottom: 120px;
+  position: relative;
+  gap: 48px;
 }
 
+.b-advisory-item:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   ADVISORY ICON COLUMN
+   ========================================================= */
+
+.b-advisory-icon-wrapper {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+/* Green circle */
+
 .b-advisory-icon-circle {
-  width: 3.25rem;
-  height: 3.25rem;
+  width: 48px;
+  height: 48px;
+  background-color: #8bc34a;
   border-radius: 50%;
-  background-color: var(--color-accent);
-  color: #0b1120;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.35rem;
   flex-shrink: 0;
-  box-shadow: 0 6px 16px rgba(130, 207, 75, 0.25);
+  margin-right: 32px;
+  box-shadow: 0 0 0 8px var(--color-bg-white);
+  position: relative;
+  z-index: 2;
+}
+
+.b-advisory-icon-circle svg {
+  width: 24px;
+  height: 24px;
+  color: #ffffff;
+}
+
+/* Icon hover */
+
+.b-advisory-item:hover .b-advisory-icon-circle {
+  transform: scale(1.08);
+}
+
+
+/* =========================================================
+   VERTICAL CONNECTING LINE
+   ========================================================= */
+
+.b-advisory-line {
+  position: absolute;
+  left: 23px;
+  /* 48px/2 - 1px for centering */
+  top: 0;
+  bottom: -64px;
+  /* Extend through bottom margin */
+  width: 2px;
+  background-color: #dcedc8;
+  z-index: 0;
+}
+
+.b-advisory-item.b-advisory-last .b-advisory-line {
+  display: none;
+}
+
+
+/* =========================================================
+   ADVISORY CONTENT
+   ========================================================= */
+
+.b-advisory-content {
+  padding-top: 8px;
 }
 
 .b-advisory-item-title {
-  font-size: 1.25rem;
+  font-size: 20px;
   font-weight: 700;
+  margin-bottom: 12px;
   color: var(--color-text-gray-900);
-  margin-bottom: 0.5rem;
 }
 
 .b-advisory-item-desc {
-  font-size: 0.9375rem;
-  line-height: 1.65;
   color: var(--color-text-gray-600);
+  line-height: 1.6;
+  font-size: 15.2px;
 }
 
-/* 6. Expertise & Stats Banner (Dark Half / Image Half) */
+
+/* Last timeline item */
+
+.b-advisory-last {
+  min-height: auto;
+}
+
+.b-advisory-last .b-advisory-content {
+  padding-bottom: 0;
+}
+
+
+/* =========================================================
+   6. EXPERTISE & STATS BANNER
+   ========================================================= */
+
 .b-expertise-banner {
-  background-color: #080c16;
+  background-color: #111518;
   color: #ffffff;
+
   overflow: hidden;
-  border-radius: var(--radius-2xl);
-  margin: 3rem auto 6rem;
-  max-width: 1200px;
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  margin: 0;
+  width: 100%;
 }
 
 .b-expertise-inner {
@@ -524,73 +642,83 @@
   grid-template-columns: 1fr;
 }
 
-@media (min-width: 1024px) {
-  .b-expertise-inner {
-    grid-template-columns: 1.1fr 0.9fr;
-  }
-}
-
 .b-expertise-text {
   padding: 4.5rem 3rem;
+
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
-
-@media (max-width: 640px) {
-  .b-expertise-text {
-    padding: 3rem 1.5rem;
-  }
+  align-items: center;
 }
 
 .b-expertise-title {
   font-size: clamp(2rem, 3.5vw, 2.75rem);
   font-weight: 800;
+
   color: #ffffff;
+
   margin: 0.875rem 0 1.25rem;
+
   line-height: 1.2;
 }
 
 .b-expertise-desc {
   font-size: 1.0625rem;
+
   color: #cbd5e1;
+
   line-height: 1.7;
+
   margin-bottom: 3rem;
+
   max-width: 520px;
 }
 
 .b-expertise-stats-row {
   display: flex;
+
   align-items: center;
+
   gap: 3.5rem;
+
   flex-wrap: wrap;
 }
 
 .b-stat-number {
   font-size: clamp(2.5rem, 4vw, 3.5rem);
+
   font-weight: 900;
+
   color: #ffffff;
+
   line-height: 1;
+
   margin-bottom: 0.5rem;
+
   letter-spacing: -0.03em;
 }
 
 .b-stat-sublabel {
   font-size: 0.875rem;
+
   color: #94a3b8;
+
   font-weight: 500;
+
   max-width: 140px;
+
   line-height: 1.4;
 }
 
 .b-expertise-image-wrap {
   position: relative;
+
   min-height: 360px;
 }
 
 .b-expertise-img {
   width: 100%;
   height: 100%;
+
   object-fit: cover;
   object-position: center;
 }
@@ -598,10 +726,327 @@
 .b-expertise-img-fallback {
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #1e1b4b 0%, #0f172a 100%);
+
+  background:
+    linear-gradient(135deg,
+      #1e1b4b 0%,
+      #0f172a 100%);
+
   display: flex;
+
   align-items: center;
   justify-content: center;
+
   color: rgba(255, 255, 255, 0.2);
+
   font-size: 4rem;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   TABLET
+   --------------------------------------------------------- */
+
+@media (min-width: 640px) {
+
+  /* Overview */
+
+  .b-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Sectors */
+
+  .b-sectors-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Benefits */
+
+  .b-benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* ---------------------------------------------------------
+   DESKTOP
+   --------------------------------------------------------- */
+
+@media (min-width: 1024px) {
+
+  /* Overview */
+
+  .b-grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Sector Header */
+
+  .b-sectors-header-row {
+    flex-direction: row;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+  }
+
+  /* Sector Cards */
+
+  .b-sectors-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Benefits */
+
+  .b-benefits-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Expertise */
+
+  .b-expertise-inner {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  /* Container */
+
+  .b-container {
+    padding: 0 1.25rem;
+  }
+
+
+  /* Hero */
+
+  .b-hero {
+    min-height: 460px;
+  }
+
+  .b-hero-content {
+    padding: 4rem 0;
+  }
+
+  .b-hero-title {
+    font-size: clamp(2.2rem, 9vw, 3rem);
+  }
+
+
+  /* Overview */
+
+  .b-overview-section {
+    padding: 4rem 0;
+  }
+
+
+  /* Sectors */
+
+  .b-sectors-section {
+    padding: 4rem 0 4.5rem;
+  }
+
+
+  /* Benefits */
+
+  .b-benefits-section {
+    padding: 4rem 0;
+  }
+
+
+  /* =====================================================
+     ADVISORY MOBILE
+     ===================================================== */
+
+  .b-advisory-section {
+    padding: 4.5rem 0;
+  }
+
+  .b-advisory-header {
+    margin-bottom: 4rem;
+
+    text-align: left;
+  }
+
+  .b-advisory-main-desc {
+    margin-left: 0;
+  }
+
+  .b-advisory-item {
+    grid-template-columns: 70px 1fr;
+
+    column-gap: 1.5rem;
+
+    min-height: 200px;
+  }
+
+  .b-advisory-icon-circle {
+    width: 64px;
+    height: 64px;
+
+    font-size: 1.5rem;
+  }
+
+  .b-advisory-line {
+    top: 64px;
+  }
+
+  .b-advisory-content {
+    padding-bottom: 4rem;
+  }
+
+  .b-advisory-item-title {
+    font-size: 1.35rem;
+  }
+
+  .b-advisory-item-desc {
+    font-size: 0.98rem;
+
+    line-height: 1.7;
+  }
+
+
+  /* Expertise */
+
+  .b-expertise-text {
+    padding: 3.5rem 1.5rem;
+  }
+
+  .b-expertise-image-wrap {
+    min-height: 300px;
+  }
+
+  .b-expertise-stats-row {
+    gap: 2rem;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+  .b-container {
+    padding: 0 1rem;
+  }
+
+
+  /* Hero */
+
+  .b-hero {
+    min-height: 430px;
+  }
+
+  .b-hero-content {
+    padding: 3.5rem 0;
+  }
+
+  .b-hero-title {
+    font-size: 2.15rem;
+  }
+
+  .b-hero-desc {
+    font-size: 0.98rem;
+  }
+
+
+  /* Overview */
+
+  .b-overview-title {
+    font-size: 1.85rem;
+  }
+
+
+  /* Sector */
+
+  .b-sector-card {
+    height: 340px;
+
+    padding: 1.5rem;
+  }
+
+
+  /* Benefits */
+
+  .b-benefit-card {
+    padding: 1.75rem 1.4rem;
+  }
+
+
+  /* =====================================================
+     ADVISORY SMALL MOBILE
+     ===================================================== */
+
+  .b-advisory-section {
+    padding: 4rem 0;
+  }
+
+  .b-advisory-main-title {
+    font-size: 1.9rem;
+  }
+
+  .b-advisory-main-desc {
+    font-size: 0.95rem;
+  }
+
+  .b-advisory-item {
+    grid-template-columns: 58px 1fr;
+
+    column-gap: 1rem;
+  }
+
+  .b-advisory-icon-circle {
+    width: 54px;
+    height: 54px;
+
+    font-size: 1.3rem;
+  }
+
+  .b-advisory-line {
+    top: 54px;
+  }
+
+  .b-advisory-item-title {
+    font-size: 1.2rem;
+
+    margin-bottom: 0.7rem;
+  }
+
+  .b-advisory-item-desc {
+    font-size: 0.92rem;
+
+    line-height: 1.7;
+  }
+
+
+  /* Expertise */
+
+  .b-expertise-text {
+    padding: 3rem 1.25rem;
+  }
+
+  .b-expertise-title {
+    font-size: 2rem;
+  }
+
+  .b-expertise-desc {
+    font-size: 0.95rem;
+  }
+
+  .b-stat-number {
+    font-size: 2.5rem;
+  }
 }

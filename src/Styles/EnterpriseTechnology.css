@@ -8,7 +8,7 @@
 .et-container {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 24px;
 }
 
 /* Base elements */
@@ -16,11 +16,11 @@
   display: inline-block;
   background-color: var(--color-bg-gray);
   color: var(--color-text-gray-900);
-  font-size: 0.875rem;
+  font-size: 14px;
   font-weight: 600;
-  padding: 0.25rem 1rem;
+  padding: 4px 16px;
   border-radius: 9999px;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 .et-tag-dark {
   background-color: rgba(255, 255, 255, 0.1);
@@ -28,45 +28,159 @@
 }
 
 .et-section-title {
-  font-size: 2.25rem;
+  font-size: 36px;
   font-weight: 700;
   line-height: 1.2;
   color: var(--color-text-gray-900);
-  margin-bottom: 3rem;
+  margin-bottom: 48px;
   max-width: 800px;
 }
 .et-text-white {
   color: var(--color-text-white);
 }
 
-/* 1. Hero / Industries Section */
-.et-hero-section {
-  background-color: #0b0f19; /* dark theme */
+/* 1. Hero Section New */
+.et-hero-section-new {
+  position: relative;
+  background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&auto=format&fit=crop&q=80');
+  background-size: cover;
+  background-position: center;
   color: var(--color-text-white);
-  padding: 6rem 1.5rem;
+  padding: 128px 24px 96px;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.et-hero-content {
-  max-width: 1280px;
-  margin: 0 auto 4rem;
+.et-hero-overlay-new {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
 }
 
-.et-hero-text {
-  font-size: 1.25rem;
+.et-hero-content-new {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.et-hero-title-new {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.et-hero-text-new {
+  font-size: 18.4px;
+  line-height: 1.6;
+  color: var(--color-text-gray-100);
+}
+
+/* 2. Overview Section */
+.et-overview-section {
+  padding: 96px 0;
+  background-color: var(--color-bg-white);
+}
+
+.et-overview-desc {
+  font-size: 17.6px;
+  color: var(--color-text-gray-600);
   line-height: 1.6;
   max-width: 800px;
-  margin-bottom: 2rem;
-  color: var(--color-text-gray-50);
+  margin-bottom: 64px;
+}
+
+.et-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 32px;
+  border-left: 1px solid var(--color-border-gray-200);
+}
+
+.et-overview-card {
+  padding: 0 32px;
+  border-right: 1px solid var(--color-border-gray-200);
+}
+.et-overview-card:last-child {
+  border-right: none;
+}
+
+.et-overview-card-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--color-text-gray-900);
+}
+
+.et-overview-card-text {
+  color: var(--color-text-gray-600);
+  font-size: 15.2px;
+  line-height: 1.6;
+}
+
+/* 3. Industries Served Section */
+.et-industries-served-section {
+  background-color: #0b0f19;
+  padding: 96px 0;
+  color: var(--color-text-white);
+  overflow: hidden;
+}
+
+.et-industries-served-split {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+.et-industries-served-desc {
+  color: var(--color-text-gray-300);
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.et-carousel-controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.et-carousel-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+.et-carousel-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.et-carousel-btn svg {
+  width: 19.2px;
+  height: 19.2px;
 }
 
 .et-hero-actions {
   display: flex;
-  gap: 1rem;
+  gap: 16px;
 }
 
 .et-btn-outline {
   display: inline-block;
-  padding: 0.75rem 1.5rem;
+  padding: 12px 24px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 9999px;
   color: var(--color-text-white);
@@ -80,7 +194,7 @@
 
 .et-btn-primary {
   display: inline-block;
-  padding: 0.75rem 1.5rem;
+  padding: 12px 24px;
   background-color: var(--color-accent);
   color: var(--color-text-gray-900);
   border-radius: 9999px;
@@ -93,11 +207,9 @@
 }
 
 .et-hero-cards {
-  max-width: 1280px;
-  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  gap: 24px;
 }
 
 .et-hero-card {
@@ -130,36 +242,53 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 2rem;
+  padding: 32px;
   z-index: 2;
 }
 
+.et-hero-card-icon {
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.et-hero-card-icon svg {
+  width: 20px;
+  height: 20px;
+  color: var(--color-text-gray-900);
+}
+
 .et-hero-card-content h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  font-size: 20px;
+  margin-bottom: 8px;
   font-weight: 700;
+  color: white;
 }
 .et-hero-card-content p {
   color: var(--color-text-gray-300);
-  font-size: 0.95rem;
+  font-size: 13.6px;
   line-height: 1.5;
 }
 
 /* 2. Benefits Section */
 .et-benefits-section {
-  padding: 6rem 0;
+  padding: 96px 0;
   background-color: #fafafa;
 }
 
 .et-benefits-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  gap: 32px;
 }
 
 .et-benefit-card {
   background-color: #ffffff;
-  padding: 2.5rem;
+  padding: 40px;
   border: 1px solid var(--color-border-gray-100);
   border-radius: var(--radius-2xl);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
@@ -175,50 +304,50 @@
 }
 
 .et-icon-container {
-  width: 3rem;
-  height: 3rem;
+  width: 48px;
+  height: 48px;
   background-color: var(--color-accent);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 24px;
 }
 
 .et-icon-container svg {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 24px;
+  height: 24px;
   color: var(--color-bg-white);
 }
 
 .et-card-title {
-  font-size: 1.25rem;
+  font-size: 20px;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
   color: var(--color-text-gray-900);
 }
 
 .et-card-text {
   color: var(--color-text-gray-600);
-  font-size: 0.95rem;
+  font-size: 15.2px;
   line-height: 1.6;
 }
 
 /* 3. Delivery Section */
 .et-delivery-section {
-  padding: 6rem 0;
+  padding: 96px 0;
   background-color: var(--color-bg-white);
 }
 
 .et-delivery-split {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  gap: 64px;
   align-items: flex-start;
 }
 
 .et-delivery-desc {
-  font-size: 1.1rem;
+  font-size: 17.6px;
   color: var(--color-text-gray-600);
   line-height: 1.6;
   max-width: 400px;
@@ -226,18 +355,18 @@
 
 .et-timeline {
   position: relative;
-  padding-left: 1.5rem;
+  padding-left: 24px;
 }
 
 /* Vertical line */
 .et-timeline::before {
   content: '';
   position: absolute;
-  left: 3rem; /* adjusted for icon center */
+  left: 48px; /* adjusted for icon center */
   top: 0;
   bottom: 0;
   width: 2px;
-  background-color: var(--color-border-gray-200);
+  background-color: #dcedc8;
   z-index: 0;
 }
 
@@ -245,7 +374,7 @@
   position: relative;
   display: flex;
   align-items: flex-start;
-  margin-bottom: 3rem;
+  margin-bottom: 64px;
   z-index: 1;
 }
 .et-timeline-item:last-child {
@@ -253,39 +382,46 @@
 }
 
 .et-timeline-icon {
-  width: 3rem;
-  height: 3rem;
-  background-color: var(--color-accent);
+  width: 48px;
+  height: 48px;
+  background-color: #8bc34a;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  margin-right: 2rem;
+  margin-right: 32px;
   box-shadow: 0 0 0 8px var(--color-bg-white); /* creates gap effect */
+  position: relative;
+  z-index: 2;
 }
 
 .et-timeline-icon svg {
-  width: 1.5rem;
-  height: 1.5rem;
-  color: var(--color-bg-white);
+  width: 24px;
+  height: 24px;
+  color: #ffffff;
+}
+
+.et-delivery-left .et-tag {
+  background-color: #e8f0fe;
+  color: #1e293b;
 }
 
 .et-timeline-content {
-  padding-top: 0.5rem;
+  padding-top: 8px;
 }
 
 .et-timeline-title {
-  font-size: 1.25rem;
+  font-size: 20px;
   font-weight: 700;
-  margin-bottom: 0.75rem;
+  margin-bottom: 12px;
   color: var(--color-text-gray-900);
 }
 
 .et-timeline-text {
   color: var(--color-text-gray-600);
   line-height: 1.6;
-  font-size: 0.95rem;
+  font-size: 15.2px;
 }
 
 /* 4. Expertise Section */
@@ -298,35 +434,35 @@
 
 .et-expertise-left {
   flex: 1;
-  padding: 6rem 1.5rem 6rem 8%;
+  padding: 96px 24px 96px 8%;
   min-width: 320px;
 }
 
 .et-expertise-desc {
   color: var(--color-text-gray-300);
-  font-size: 1.1rem;
+  font-size: 17.6px;
   line-height: 1.7;
   max-width: 500px;
-  margin-bottom: 3rem;
+  margin-bottom: 48px;
 }
 
 .et-stats-container {
   display: flex;
-  gap: 3rem;
+  gap: 48px;
   flex-wrap: wrap;
 }
 
 .et-stat-value {
-  font-size: 3rem;
+  font-size: 48px;
   font-weight: 800;
   color: var(--color-text-white);
-  margin-bottom: 0.5rem;
+  margin-bottom: 8px;
   line-height: 1;
 }
 
 .et-stat-label {
   color: var(--color-text-gray-400);
-  font-size: 0.95rem;
+  font-size: 15.2px;
   line-height: 1.5;
 }
 
@@ -344,19 +480,32 @@
 }
 
 /* Responsive adjustments */
+@media (max-width: 1100px) {
+  .et-industries-served-split {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .et-hero-cards {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
 @media (max-width: 992px) {
   .et-delivery-split {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 48px;
   }
 }
 
 @media (max-width: 768px) {
   .et-section-title {
-    font-size: 1.75rem;
+    font-size: 28px;
   }
-  .et-hero-section {
-    padding: 4rem 1.5rem;
+  .et-hero-title-new {
+    font-size: 36px;
+  }
+  .et-hero-section-new {
+    padding: 96px 24px 64px;
   }
   .et-hero-actions {
     flex-direction: column;
@@ -364,10 +513,22 @@
   .et-benefits-grid {
     grid-template-columns: 1fr;
   }
+  .et-overview-grid {
+    grid-template-columns: 1fr;
+    border-left: none;
+  }
+  .et-overview-card {
+    border-right: none;
+    border-bottom: 1px solid var(--color-border-gray-200);
+    padding: 32px 0;
+  }
+  .et-overview-card:last-child {
+    border-bottom: none;
+  }
   .et-expertise-left {
-    padding: 4rem 1.5rem;
+    padding: 64px 24px;
   }
   .et-stat-value {
-    font-size: 2.5rem;
+    font-size: 40px;
   }
 }

@@ -1,0 +1,328 @@
+/* Service Pages Layout */
+.svc-page-container {
+  font-family: 'Inter', sans-serif;
+  color: #1a1a1a;
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+.svc-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* 1. Hero Section */
+.svc-hero-section {
+  position: relative;
+  height: 60vh;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&auto=format&fit=crop&q=80'); /* Placeholder */
+  background-size: cover;
+  background-position: center;
+}
+
+.svc-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 100%);
+}
+
+.svc-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding-left: 5%;
+}
+
+.svc-tag {
+  display: inline-block;
+  padding: 4.8px 16px;
+  border-radius: 50px;
+  font-size: 13.6px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.svc-tag-light {
+  background-color: #fff;
+  color: #0f172a;
+}
+
+.svc-hero-title {
+  font-size: 56px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 16px;
+  line-height: 1.1;
+}
+
+.svc-hero-text {
+  font-size: 17.6px;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 600px;
+}
+
+/* 2. Overview / Stats Section */
+.svc-overview-section {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.svc-section-title {
+  font-size: 40px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 24px;
+  max-width: 800px;
+}
+
+.svc-overview-desc {
+  font-size: 17.6px;
+  color: #64748b;
+  margin-bottom: 64px;
+  max-width: 900px;
+}
+
+.svc-stats-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.svc-stat-card {
+  flex: 1;
+  min-width: 150px;
+  background-color: #f0fdf4;
+  padding: 32px 24px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.svc-stat-icon {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  color: #22c55e;
+  opacity: 0.8;
+}
+
+.svc-stat-value {
+  font-size: 40px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.svc-stat-label {
+  font-size: 14.4px;
+  font-weight: 600;
+  color: #334155;
+}
+
+/* 3. Solutions Section */
+.svc-solutions-section {
+  padding: 96px 0;
+  background-color: #0f172a;
+  color: #fff;
+}
+
+.svc-text-white {
+  color: #fff !important;
+}
+
+.svc-solutions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 64px;
+}
+
+.svc-solutions-header-left {
+  max-width: 600px;
+}
+
+.svc-solutions-desc {
+  color: #94a3b8;
+  font-size: 17.6px;
+}
+
+.svc-carousel-controls {
+  display: flex;
+  gap: 16px;
+}
+
+.svc-carousel-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.svc-carousel-btn:hover {
+  background: #22c55e;
+  border-color: #22c55e;
+}
+
+.svc-solutions-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.svc-solution-card {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 40px 24px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.svc-solution-card:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.svc-solution-icon {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(34, 197, 94, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #22c55e;
+  margin-bottom: 24px;
+}
+
+.svc-solution-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.svc-solution-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+.svc-solution-text {
+  font-size: 15.2px;
+  color: #94a3b8;
+  line-height: 1.6;
+}
+
+/* 4. Benefits Section */
+.svc-benefits-section {
+  padding: 96px 0;
+  background-color: #fff;
+}
+
+.svc-benefits-main-title {
+  text-align: center;
+  font-size: 35.2px;
+  font-weight: 800;
+  color: #94a3b8;
+  margin-bottom: 64px;
+}
+
+.svc-benefits-split {
+  display: flex;
+  gap: 64px;
+  align-items: center;
+}
+
+.svc-benefits-left {
+  flex: 1;
+}
+
+.svc-benefit-item {
+  margin-bottom: 32px;
+}
+
+.svc-benefit-title {
+  font-size: 19.2px;
+  font-weight: 700;
+  color: #38bdf8;
+  margin-bottom: 8px;
+}
+
+.svc-benefit-text {
+  color: #64748b;
+  font-size: 16.8px;
+  line-height: 1.6;
+}
+
+.svc-benefits-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.svc-benefits-img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  margin-bottom: 32px;
+}
+
+.svc-carousel-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.svc-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #cbd5e1;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.svc-dot.active {
+  background-color: #0f172a;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .svc-solutions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .svc-benefits-split {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .svc-hero-title {
+    font-size: 40px;
+  }
+  .svc-solutions-grid {
+    grid-template-columns: 1fr;
+  }
+  .svc-solutions-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+}

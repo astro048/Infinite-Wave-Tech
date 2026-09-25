@@ -1,132 +1,132 @@
 .about {
-  padding: 4rem 0;
+  padding: 64px 0;
   background-color: var(--color-bg-white);
 }
 
 @media (min-width: 640px) {
   .about {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 }
 
 @media (min-width: 1024px) {
   .about {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
 }
 
 .about-section {
-  padding: 4rem 0;
+  padding: 64px 0;
   background-color: var(--color-bg-white);
 }
 
 @media (min-width: 640px) {
   .about-section {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 }
 
 @media (min-width: 1024px) {
   .about-section {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
 }
 
 .about-container {
-  max-width: 80rem;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 16px;
 }
 
 @media (min-width: 640px) {
   .about-container {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 
 @media (min-width: 1024px) {
   .about-container {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 
 .about-header {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 48px;
 }
 
 @media (min-width: 640px) {
   .about-header {
-    margin-bottom: 3.5rem;
+    margin-bottom: 56px;
   }
 }
 
 .about-subtitle {
   color: var(--color-primary);
-  font-size: 0.75rem;
+  font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  margin-bottom: 0.75rem;
+  margin-bottom: 12px;
 }
 
 .about-title {
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: 800;
   color: var(--color-text-gray-900);
-  margin-bottom: 0.75rem;
+  margin-bottom: 12px;
   letter-spacing: -0.025em;
 }
 
 @media (min-width: 640px) {
   .about-title {
-    font-size: 1.875rem;
+    font-size: 30px;
   }
 }
 
 @media (min-width: 1024px) {
   .about-title {
-    font-size: 2.25rem;
+    font-size: 36px;
   }
 }
 
 .about-description {
   color: var(--color-text-gray-400);
-  font-size: 0.875rem;
-  max-width: 20rem;
+  font-size: 14px;
+  max-width: 320px;
   margin: 0 auto;
 }
 
 @media (min-width: 640px) {
   .about-description {
-    font-size: 1rem;
-    max-width: 24rem;
+    font-size: 16px;
+    max-width: 384px;
   }
 }
 
 .about-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2.5rem;
+  gap: 40px;
   align-items: start;
 }
 
 @media (min-width: 1024px) {
   .about-grid {
     grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    gap: 64px;
   }
 }
 
 .about-card {
   position: relative;
-  border-radius: 1.5rem;
+  border-radius: 24px;
   padding: 2px;
   overflow: hidden;
 }
@@ -157,8 +157,8 @@
 
 .about-card-content {
   background: linear-gradient(to bottom right, var(--color-primary), #8b5cf6);
-  border-radius: calc(1.5rem - 2px);
-  padding: 2rem;
+  border-radius: calc(24px - 2px);
+  padding: 32px;
   position: relative;
   overflow: hidden;
   height: 100%;
@@ -168,7 +168,7 @@
 
 @media (min-width: 640px) {
   .about-card-content {
-    padding: 2.5rem;
+    padding: 40px;
   }
 }
 
@@ -176,8 +176,8 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 10rem;
-  height: 10rem;
+  width: 160px;
+  height: 160px;
   background-color: rgba(255, 255, 255, 0.05);
   border-radius: 50%;
   transform: translateY(-50%) translateX(50%);
@@ -187,8 +187,8 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 8rem;
-  height: 8rem;
+  width: 128px;
+  height: 128px;
   background-color: rgba(255, 255, 255, 0.05);
   border-radius: 50%;
   transform: translateY(50%) translateX(-50%);
@@ -200,14 +200,14 @@
 }
 
 .about-avatar {
-  width: 5rem;
-  height: 5rem;
-  margin-bottom: 1.5rem;
-  border-radius: 1rem;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 24px;
+  border-radius: 16px;
   background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 0.5rem;
+  padding: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -215,8 +215,8 @@
 
 @media (min-width: 640px) {
   .about-avatar {
-    width: 6rem;
-    height: 6rem;
+    width: 96px;
+    height: 96px;
   }
 }
 
@@ -228,41 +228,41 @@
 }
 
 .about-name {
-  font-size: 1.25rem;
+  font-size: 20px;
   font-weight: 700;
   color: var(--color-text-white);
-  margin-bottom: 0.5rem;
+  margin-bottom: 8px;
 }
 
 @media (min-width: 640px) {
   .about-name {
-    font-size: 1.5rem;
+    font-size: 24px;
   }
 }
 
 .about-role {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 0.875rem;
-  margin-bottom: 1.5rem;
+  font-size: 14px;
+  margin-bottom: 24px;
 }
 
 .about-text {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 0.875rem;
+  font-size: 14px;
   line-height: 1.625;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 
 .about-approach {
-  font-size: 1.125rem;
+  font-size: 18px;
   font-weight: 600;
   color: var(--color-text-white);
-  margin-bottom: 0.5rem;
+  margin-bottom: 8px;
   letter-spacing: 0.025em;
 }
 
 .about-right {
-  padding-top: 2rem;
+  padding-top: 32px;
 }
 
 @media (min-width: 1024px) {
@@ -272,16 +272,16 @@
 }
 
 .about-highlights-title {
-  font-size: 1.125rem;
+  font-size: 18px;
   font-weight: 700;
   color: var(--color-text-gray-900);
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 
 .about-highlights-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0.75rem;
+  gap: 12px;
 }
 
 @media (min-width: 640px) {
@@ -293,127 +293,127 @@
 .about-highlight {
   display: flex;
   align-items: flex-start;
-  gap: 0.625rem;
+  gap: 10px;
 }
 
 .about-highlight-icon {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 20px;
+  height: 20px;
   color: var(--color-primary);
   flex-shrink: 0;
-  margin-top: 0.125rem;
+  margin-top: 2px;
 }
 
 .about-highlight-text {
-  font-size: 0.875rem;
+  font-size: 14px;
   color: var(--color-text-gray-600);
 }
 
 @media (min-width: 640px) {
   .about {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 }
 
 @media (min-width: 1024px) {
   .about {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
 }
 
 .about-container {
-  max-width: 80rem;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 16px;
 }
 
 @media (min-width: 640px) {
   .about-container {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 
 @media (min-width: 1024px) {
   .about-container {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 
 .about-header {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 48px;
 }
 
 @media (min-width: 640px) {
   .about-header {
-    margin-bottom: 3.5rem;
+    margin-bottom: 56px;
   }
 }
 
 .about-subtitle {
   color: var(--color-primary);
-  font-size: 0.75rem;
+  font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  margin-bottom: 0.75rem;
+  margin-bottom: 12px;
 }
 
 .about-title {
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: 800;
   color: var(--color-text-gray-900);
-  margin-bottom: 0.75rem;
+  margin-bottom: 12px;
   letter-spacing: -0.025em;
 }
 
 @media (min-width: 640px) {
   .about-title {
-    font-size: 1.875rem;
+    font-size: 30px;
   }
 }
 
 @media (min-width: 1024px) {
   .about-title {
-    font-size: 2.25rem;
+    font-size: 36px;
   }
 }
 
 .about-description {
   color: var(--color-text-gray-400);
-  font-size: 0.875rem;
-  max-width: 20rem;
+  font-size: 14px;
+  max-width: 320px;
   margin: 0 auto;
 }
 
 @media (min-width: 640px) {
   .about-description {
-    font-size: 1rem;
-    max-width: 24rem;
+    font-size: 16px;
+    max-width: 384px;
   }
 }
 
 .about-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2.5rem;
+  gap: 40px;
   align-items: start;
 }
 
 @media (min-width: 1024px) {
   .about-grid {
     grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    gap: 64px;
   }
 }
 
 .about-card {
   position: relative;
-  border-radius: 1.5rem;
+  border-radius: 24px;
   padding: 2px;
   overflow: hidden;
 }
@@ -444,8 +444,8 @@
 
 .about-card-content {
   background: linear-gradient(to bottom right, var(--color-primary), #8b5cf6);
-  border-radius: calc(1.5rem - 2px);
-  padding: 2rem;
+  border-radius: calc(24px - 2px);
+  padding: 32px;
   position: relative;
   overflow: hidden;
   height: 100%;
@@ -455,7 +455,7 @@
 
 @media (min-width: 640px) {
   .about-card-content {
-    padding: 2.5rem;
+    padding: 40px;
   }
 }
 
@@ -463,8 +463,8 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 10rem;
-  height: 10rem;
+  width: 160px;
+  height: 160px;
   background-color: rgba(255, 255, 255, 0.05);
   border-radius: 50%;
   transform: translateY(-50%) translateX(50%);
@@ -474,8 +474,8 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 8rem;
-  height: 8rem;
+  width: 128px;
+  height: 128px;
   background-color: rgba(255, 255, 255, 0.05);
   border-radius: 50%;
   transform: translateY(50%) translateX(-50%);
@@ -487,14 +487,14 @@
 }
 
 .about-avatar {
-  width: 5rem;
-  height: 5rem;
-  margin-bottom: 1.5rem;
-  border-radius: 1rem;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 24px;
+  border-radius: 16px;
   background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 0.5rem;
+  padding: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -502,8 +502,8 @@
 
 @media (min-width: 640px) {
   .about-avatar {
-    width: 6rem;
-    height: 6rem;
+    width: 96px;
+    height: 96px;
   }
 }
 
@@ -515,41 +515,41 @@
 }
 
 .about-name {
-  font-size: 1.25rem;
+  font-size: 20px;
   font-weight: 700;
   color: var(--color-text-white);
-  margin-bottom: 0.5rem;
+  margin-bottom: 8px;
 }
 
 @media (min-width: 640px) {
   .about-name {
-    font-size: 1.5rem;
+    font-size: 24px;
   }
 }
 
 .about-role {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 0.875rem;
-  margin-bottom: 1.5rem;
+  font-size: 14px;
+  margin-bottom: 24px;
 }
 
 .about-text {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 0.875rem;
+  font-size: 14px;
   line-height: 1.625;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 
 .about-approach {
-  font-size: 1.125rem;
+  font-size: 18px;
   font-weight: 600;
   color: var(--color-text-white);
-  margin-bottom: 0.5rem;
+  margin-bottom: 8px;
   letter-spacing: 0.025em;
 }
 
 .about-right {
-  padding-top: 2rem;
+  padding-top: 32px;
 }
 
 @media (min-width: 1024px) {
@@ -559,16 +559,16 @@
 }
 
 .about-highlights-title {
-  font-size: 1.125rem;
+  font-size: 18px;
   font-weight: 700;
   color: var(--color-text-gray-900);
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 
 .about-highlights-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0.75rem;
+  gap: 12px;
 }
 
 @media (min-width: 640px) {
@@ -580,18 +580,18 @@
 .about-highlight {
   display: flex;
   align-items: flex-start;
-  gap: 0.625rem;
+  gap: 10px;
 }
 
 .about-highlight-icon {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 20px;
+  height: 20px;
   color: var(--color-primary);
   flex-shrink: 0;
-  margin-top: 0.125rem;
+  margin-top: 2px;
 }
 
 .about-highlight-text {
-  font-size: 0.875rem;
+  font-size: 14px;
   color: var(--color-text-gray-600);
 }

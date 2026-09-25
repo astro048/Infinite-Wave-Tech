@@ -1,6 +1,6 @@
 .portfolio-card {
   position: relative;
-  border-radius: 1rem;
+  border-radius: 16px;
   overflow: hidden;
   cursor: pointer;
 }
@@ -25,22 +25,22 @@
 
 .portfolio-pattern-circle-1 {
   position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  width: 5rem;
-  height: 5rem;
+  top: 24px;
+  right: 24px;
+  width: 80px;
+  height: 80px;
   border: 2px solid var(--color-text-white);
   border-radius: 50%;
 }
 
 .portfolio-pattern-circle-2 {
   position: absolute;
-  bottom: 2rem;
-  left: 2rem;
-  width: 3.5rem;
-  height: 3.5rem;
+  bottom: 32px;
+  left: 32px;
+  width: 56px;
+  height: 56px;
   border: 2px solid var(--color-text-white);
-  border-radius: 0.5rem;
+  border-radius: 8px;
   transform: rotate(12deg);
 }
 
@@ -49,8 +49,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 8rem;
-  height: 8rem;
+  width: 128px;
+  height: 128px;
   border: 1px solid var(--color-text-white);
   border-radius: 50%;
 }
@@ -62,11 +62,11 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 1rem;
+  padding: 16px;
 }
 
 .portfolio-card-label-text {
-  font-size: 1.25rem;
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: -0.025em;
   color: var(--color-text-white);
@@ -75,7 +75,7 @@
 
 @media (min-width: 640px) {
   .portfolio-card-label-text {
-    font-size: 1.375rem;
+    font-size: 22px;
   }
 }
 
@@ -89,7 +89,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1.5rem;
+  padding: 24px;
 }
 
 .portfolio-card:hover .portfolio-card-overlay {
@@ -97,32 +97,32 @@
 }
 
 .portfolio-card-description {
-  font-size: 0.875rem;
+  font-size: 14px;
   line-height: 1.625;
   color: var(--color-text-gray-300);
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 
 @media (min-width: 640px) {
   .portfolio-card-description {
-    font-size: 0.9375rem;
+    font-size: 15px;
   }
 }
 
 .portfolio-card-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 8px;
   justify-content: center;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 
 .portfolio-card-tag {
-  padding: 0.25rem 0.75rem;
+  padding: 4px 12px;
   background-color: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(4px);
-  font-size: 0.6875rem;
+  font-size: 11px;
   font-weight: 500;
   color: var(--color-text-white);
   border-radius: 9999px;
@@ -130,15 +130,15 @@
 
 @media (min-width: 640px) {
   .portfolio-card-tag {
-    font-size: 0.75rem;
+    font-size: 12px;
   }
 }
 
 .portfolio-card-btn {
-  padding: 0.625rem 1.25rem;
+  padding: 10px 20px;
   background-color: var(--color-bg-white);
   color: var(--color-text-gray-900);
-  font-size: 0.75rem;
+  font-size: 12px;
   font-weight: 600;
   border: none;
   border-radius: 9999px;
@@ -148,7 +148,7 @@
 
 @media (min-width: 640px) {
   .portfolio-card-btn {
-    font-size: 0.875rem;
+    font-size: 14px;
   }
 }
 
@@ -157,16 +157,16 @@
 }
 
 .portfolio-card-info {
-  padding: 1rem;
+  padding: 16px;
   background-color: var(--color-bg-white);
   border: 1px solid var(--color-border-gray-100);
   border-top: none;
-  border-radius: 0 0 1rem 1rem;
+  border-radius: 0 0 16px 16px;
 }
 
 .portfolio-card-category {
   color: var(--color-primary);
-  font-size: 0.625rem;
+  font-size: 10px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -174,21 +174,21 @@
 
 @media (min-width: 640px) {
   .portfolio-card-category {
-    font-size: 0.75rem;
+    font-size: 12px;
   }
 }
 
 .portfolio-card-name {
-  font-size: 0.875rem;
+  font-size: 14px;
   font-weight: 700;
   color: var(--color-text-gray-900);
-  margin-top: 0.25rem;
+  margin-top: 4px;
   transition: color 0.2s ease;
 }
 
 @media (min-width: 640px) {
   .portfolio-card-name {
-    font-size: 1rem;
+    font-size: 16px;
   }
 }
 

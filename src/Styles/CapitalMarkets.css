@@ -38,7 +38,7 @@
 .cm-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 24px;
   width: 100%;
   position: relative;
   z-index: 10;
@@ -46,21 +46,22 @@
 
 .cm-hero-content {
   max-width: 680px;
-  padding: 6rem 0 5.5rem;
+  padding: 96px 0 88px;
 }
 
 .cm-pill-badge {
   display: inline-block;
-  padding: 0.35rem 1.1rem;
+  padding: 5.6px 17.6px;
   background: rgba(255, 255, 255, 0.12);
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: #e0e7ff;
   border-radius: 9999px;
-  font-size: 0.8125rem;
+  font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.04em;
-  margin-bottom: 1.25rem;
+  margin-bottom: 20px;
   backdrop-filter: blur(8px);
+  width: fit-content;
 }
 
 .cm-pill-badge-light {
@@ -70,16 +71,16 @@
 }
 
 .cm-hero-title {
-  font-size: clamp(2.4rem, 4.5vw, 3.85rem);
+  font-size: clamp(38.4px, 4.5vw, 61.6px);
   font-weight: 800;
   line-height: 1.15;
   color: #ffffff;
-  margin-bottom: 1.25rem;
+  margin-bottom: 20px;
   letter-spacing: -0.02em;
 }
 
 .cm-hero-desc {
-  font-size: 1.0625rem;
+  font-size: 17px;
   line-height: 1.7;
   color: #cbd5e1;
   max-width: 600px;
@@ -87,26 +88,26 @@
 
 /* 2. Overview Section (Light 4-Cards Grid) */
 .cm-overview-section {
-  padding: 5.5rem 0 4.5rem;
+  padding: 88px 0 72px;
   background-color: #ffffff;
 }
 
 .cm-overview-header {
   max-width: 780px;
-  margin-bottom: 3.5rem;
+  margin-bottom: 56px;
 }
 
 .cm-overview-title {
-  font-size: clamp(1.85rem, 3.2vw, 2.5rem);
+  font-size: clamp(29.6px, 3.2vw, 40px);
   font-weight: 800;
   color: var(--color-text-gray-900);
   line-height: 1.25;
   letter-spacing: -0.02em;
-  margin: 0.875rem 0 1.25rem;
+  margin: 14px 0 20px;
 }
 
 .cm-overview-lead {
-  font-size: 1.0625rem;
+  font-size: 17px;
   line-height: 1.75;
   color: var(--color-text-gray-600);
 }
@@ -114,7 +115,7 @@
 .cm-grid-4 {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.5rem;
+  gap: 24px;
 }
 
 @media (min-width: 640px) {
@@ -133,7 +134,7 @@
   background: #ffffff;
   border: 1px solid var(--color-border-gray-200);
   border-radius: var(--radius-xl);
-  padding: 2rem 1.625rem;
+  padding: 32px 26px;
   display: flex;
   flex-direction: column;
   transition: all var(--transition-base);
@@ -147,15 +148,15 @@
 }
 
 .cm-card-title {
-  font-size: 1.15rem;
+  font-size: 18.4px;
   font-weight: 700;
   color: var(--color-text-gray-900);
-  margin-bottom: 0.75rem;
+  margin-bottom: 12px;
   line-height: 1.35;
 }
 
 .cm-card-desc {
-  font-size: 0.90625rem;
+  font-size: 14.5px;
   line-height: 1.65;
   color: var(--color-text-gray-600);
 }
@@ -164,7 +165,7 @@
 .cm-sectors-section {
   background-color: #080c16;
   color: #ffffff;
-  padding: 5rem 0 5.5rem;
+  padding: 80px 0 88px;
   position: relative;
   overflow: hidden;
 }
@@ -172,13 +173,13 @@
 .cm-sectors-top-controls {
   display: flex;
   justify-content: flex-end;
-  gap: 0.75rem;
-  margin-bottom: 1.5rem;
+  gap: 12px;
+  margin-bottom: 24px;
 }
 
 .cm-nav-arrow-btn {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: rgba(255, 255, 255, 0.05);
@@ -199,14 +200,14 @@
 .cm-sectors-row-layout {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 48px;
 }
 
 @media (min-width: 1100px) {
   .cm-sectors-row-layout {
     display: grid;
     grid-template-columns: 340px 1fr;
-    gap: 3rem;
+    gap: 48px;
     align-items: stretch;
   }
 }
@@ -219,38 +220,38 @@
 }
 
 .cm-sectors-title {
-  font-size: clamp(1.85rem, 2.5vw, 2.35rem);
+  font-size: clamp(29.6px, 2.5vw, 37.6px);
   font-weight: 800;
   color: #ffffff;
-  margin: 0.75rem 0 1rem;
+  margin: 12px 0 16px;
   line-height: 1.25;
   letter-spacing: -0.02em;
 }
 
 .cm-sectors-lead {
-  font-size: 0.95rem;
+  font-size: 15.2px;
   color: #94a3b8;
   line-height: 1.65;
-  margin-bottom: 2rem;
+  margin-bottom: 32px;
 }
 
 .cm-sectors-actions {
   display: flex;
   align-items: center;
-  gap: 0.875rem;
+  gap: 14px;
   flex-wrap: wrap;
 }
 
 .cm-btn-dark-outline {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.65rem 1.4rem;
+  gap: 8px;
+  padding: 10.4px 22.4px;
   border-radius: 9999px;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: #ffffff;
-  font-size: 0.875rem;
+  font-size: 14px;
   font-weight: 600;
   text-decoration: none;
   transition: all var(--transition-base);
@@ -266,12 +267,12 @@
 .cm-btn-accent {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.65rem 1.4rem;
+  gap: 8px;
+  padding: 10.4px 22.4px;
   border-radius: 9999px;
   background-color: var(--color-accent);
   color: #0b1120;
-  font-size: 0.875rem;
+  font-size: 14px;
   font-weight: 700;
   text-decoration: none;
   transition: all var(--transition-base);
@@ -288,7 +289,8 @@
 .cm-sectors-cards-row {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.25rem;
+  gap: 50px;
+
 }
 
 @media (min-width: 640px) {
@@ -311,7 +313,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 1.5rem;
+  padding: 24px;
   background-color: #131b2e;
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all var(--transition-base);
@@ -349,91 +351,61 @@
 
 .cm-sector-icon-floating {
   position: absolute;
-  top: 1.25rem;
-  left: 1.25rem;
+  top: 24px;
+  left: 24px;
   z-index: 10;
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: var(--radius-lg);
-  background: rgba(11, 17, 32, 0.65);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
-  font-size: 1.15rem;
-  backdrop-filter: blur(8px);
+  color: #0b1120;
+  font-size: 24px;
 }
 
 .cm-sector-card-title {
-  font-size: 1.15rem;
+  font-size: 18.4px;
   font-weight: 700;
   color: #ffffff;
-  margin-bottom: 0.5rem;
+  margin-bottom: 8px;
   line-height: 1.3;
 }
 
 .cm-sector-card-desc {
-  font-size: 0.85rem;
+  font-size: 13.6px;
   line-height: 1.55;
   color: #cbd5e1;
 }
 
-.cm-sector-card {
-  top: 1.5rem;
-  left: 1.5rem;
-  z-index: 10;
-  width: 2.75rem;
-  height: 2.75rem;
-  border-radius: var(--radius-lg);
-  background: rgba(11, 17, 32, 0.65);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  font-size: 1.25rem;
-  backdrop-filter: blur(8px);
-}
 
-.cm-sector-card-title {
-  font-size: 1.35rem;
-  font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 0.625rem;
-}
-
-.cm-sector-card-desc {
-  font-size: 0.90625rem;
-  line-height: 1.6;
-  color: #cbd5e1;
-}
 
 /* 4. Benefits Section (4 Columns with Green Theme Circle Icons) */
 .cm-benefits-section {
-  padding: 5.5rem 0;
+  padding: 88px 0;
   background-color: #ffffff;
   border-bottom: 1px solid var(--color-border-gray-100);
 }
 
 .cm-benefits-header {
   max-width: 800px;
-  margin-bottom: 3.5rem;
+  margin-bottom: 56px;
 }
 
 .cm-benefits-title {
-  font-size: clamp(1.85rem, 3.2vw, 2.45rem);
+  font-size: clamp(29.6px, 3.2vw, 39.2px);
   font-weight: 800;
   color: var(--color-text-gray-900);
   line-height: 1.25;
   letter-spacing: -0.02em;
-  margin-top: 0.875rem;
+  margin-top: 14px;
 }
 
 .cm-benefits-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.75rem;
+  gap: 28px;
 }
 
 @media (min-width: 640px) {
@@ -449,7 +421,7 @@
 }
 
 .cm-benefit-card {
-  padding: 2.25rem 1.625rem;
+  padding: 36px 26px;
   background: #ffffff;
   border: 1px solid var(--color-border-gray-200);
   border-radius: var(--radius-xl);
@@ -463,16 +435,16 @@
 }
 
 .cm-benefit-icon-box {
-  width: 3.25rem;
-  height: 3.25rem;
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
   background-color: var(--color-accent);
   color: #0b1120;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.35rem;
-  margin-bottom: 1.5rem;
+  font-size: 21.6px;
+  margin-bottom: 24px;
   box-shadow: 0 6px 16px rgba(130, 207, 75, 0.25);
   transition: transform var(--transition-base);
 }
@@ -482,28 +454,28 @@
 }
 
 .cm-benefit-title {
-  font-size: 1.15rem;
+  font-size: 18.4px;
   font-weight: 700;
   color: var(--color-text-gray-900);
-  margin-bottom: 0.75rem;
+  margin-bottom: 12px;
 }
 
 .cm-benefit-desc {
-  font-size: 0.90625rem;
+  font-size: 14.5px;
   line-height: 1.65;
   color: var(--color-text-gray-600);
 }
 
 /* 5. Delivery / 3 Key Areas Section */
 .cm-advisory-section {
-  padding: 5.5rem 0 6rem;
+  padding: 88px 0 96px;
   background-color: #f8fafc;
 }
 
 .cm-advisory-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 3.5rem;
+  gap: 56px;
   align-items: flex-start;
 }
 
@@ -518,16 +490,16 @@
 }
 
 .cm-advisory-title {
-  font-size: clamp(2rem, 3.5vw, 2.6rem);
+  font-size: clamp(32px, 3.5vw, 41.6px);
   font-weight: 800;
   color: var(--color-text-gray-900);
   line-height: 1.2;
   letter-spacing: -0.02em;
-  margin: 0.875rem 0 1.25rem;
+  margin: 14px 0 20px;
 }
 
 .cm-advisory-desc {
-  font-size: 1.0625rem;
+  font-size: 17px;
   line-height: 1.75;
   color: var(--color-text-gray-600);
 }
@@ -536,16 +508,16 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 120px;
 }
 
 /* Connecting vertical line like image */
 .cm-advisory-list::before {
   content: '';
   position: absolute;
-  left: 1.625rem;
-  top: 2rem;
-  bottom: 2rem;
+  left: 26px;
+  top: 32px;
+  bottom: 32px;
   width: 2px;
   background-color: #e2e8f0;
   z-index: 1;
@@ -556,33 +528,33 @@
   z-index: 2;
   display: flex;
   align-items: flex-start;
-  gap: 1.5rem;
+  gap: 24px;
 }
 
 .cm-advisory-icon-circle {
-  width: 3.25rem;
-  height: 3.25rem;
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
   background-color: var(--color-accent);
   color: #0b1120;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.35rem;
+  font-size: 21.6px;
   flex-shrink: 0;
   box-shadow: 0 6px 16px rgba(130, 207, 75, 0.25);
   background-clip: padding-box;
 }
 
 .cm-advisory-item-title {
-  font-size: 1.25rem;
+  font-size: 20px;
   font-weight: 700;
   color: var(--color-text-gray-900);
-  margin-bottom: 0.5rem;
+  margin-bottom: 8px;
 }
 
 .cm-advisory-item-desc {
-  font-size: 0.9375rem;
+  font-size: 15px;
   line-height: 1.65;
   color: var(--color-text-gray-600);
 }
@@ -593,7 +565,7 @@
   color: #ffffff;
   overflow: hidden;
   border-radius: var(--radius-2xl);
-  margin: 3rem auto 6rem;
+  margin: 48px auto 96px;
   max-width: 1200px;
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -611,7 +583,7 @@
 }
 
 .cm-expertise-text {
-  padding: 4.5rem 3rem;
+  padding: 72px 48px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -619,44 +591,44 @@
 
 @media (max-width: 640px) {
   .cm-expertise-text {
-    padding: 3rem 1.5rem;
+    padding: 48px 24px;
   }
 }
 
 .cm-expertise-title {
-  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-size: clamp(32px, 3.5vw, 44px);
   font-weight: 800;
   color: #ffffff;
-  margin: 0.875rem 0 1.25rem;
+  margin: 14px 0 20px;
   line-height: 1.2;
 }
 
 .cm-expertise-desc {
-  font-size: 1.0625rem;
+  font-size: 17px;
   color: #cbd5e1;
   line-height: 1.7;
-  margin-bottom: 3rem;
+  margin-bottom: 48px;
   max-width: 520px;
 }
 
 .cm-expertise-stats-row {
   display: flex;
   align-items: center;
-  gap: 3.5rem;
+  gap: 56px;
   flex-wrap: wrap;
 }
 
 .cm-stat-number {
-  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-size: clamp(40px, 4vw, 56px);
   font-weight: 900;
   color: #ffffff;
   line-height: 1;
-  margin-bottom: 0.5rem;
+  margin-bottom: 8px;
   letter-spacing: -0.03em;
 }
 
 .cm-stat-sublabel {
-  font-size: 0.875rem;
+  font-size: 14px;
   color: #94a3b8;
   font-weight: 500;
   max-width: 150px;

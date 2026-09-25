@@ -3,10 +3,10 @@
   min-height: 300px;
   width: 100%;
   flex-direction: column;
-  border-radius: 1rem;
+  border-radius: 16px;
   border: 1px solid rgba(255, 255, 255, 0.05);
   background-color: #0c0e14;
-  padding: 2rem;
+  padding: 32px;
   transition: background-color 300ms, border-color 300ms, color 300ms;
 }
 
@@ -20,8 +20,8 @@
   flex-shrink: 0;
   align-items: center;
   justify-content: center;
-  width: 4rem;
-  height: 4rem;
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
   background-color: var(--color-accent);
   color: var(--color-text-white);
@@ -35,18 +35,18 @@
 }
 
 .service-card-icon svg {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 24px;
+  height: 24px;
 }
 
 .service-card-content {
-  padding-top: 5rem;
+  padding-top: 80px;
   margin-top: auto;
 }
 
 .service-card-title {
-  margin-bottom: 1.5rem;
-  font-size: 1.25rem;
+  margin-bottom: 24px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 1.25;
   letter-spacing: -0.02em;
@@ -55,24 +55,24 @@
 
 @media (min-width: 640px) {
   .service-card-title {
-    font-size: 1.35rem;
+    font-size: 21.6px;
   }
 }
 
 .service-card-description {
-  font-size: 0.875rem;
+  font-size: 14px;
   line-height: 1.75;
   color: var(--color-text-gray-300);
 }
 
 @media (min-width: 640px) {
   .service-card-description {
-    font-size: 0.9375rem;
+    font-size: 15px;
   }
 }
 
 /* Custom icon styles */
 .service-card-icon-ps {
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 700;
 }

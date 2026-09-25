@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Contact from '../../components/Contact';
+import SectorCard from '../../components/SectorCard';
 import '../../Styles/CapitalMarkets.css';
 import {
   HiOutlineTrendingUp,
@@ -23,7 +24,7 @@ const CapitalMarkets: React.FC = () => {
       {/* 1. Hero Section */}
       <section className="cm-hero">
         <img
-          src="/image/Hero Background2.png"
+          src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=1920&auto=format&fit=crop&q=80"
           alt="Capital Markets Corporate Buildings"
           className="cm-hero-bg"
           onError={(e) => {
@@ -145,61 +146,28 @@ const CapitalMarkets: React.FC = () => {
             {/* Right Column: 3 Sector Cards side-by-side */}
             <div className="cm-sectors-cards-row">
               {/* Card 1: Equity Trading */}
-              <div className="cm-sector-card">
-                <img
-                  src="/image/banking_hero.jpg"
-                  alt="Equity Trading"
-                  className="cm-sector-bg-img"
-                />
-                <div className="cm-sector-overlay"></div>
-                <div className="cm-sector-icon-floating">
-                  <HiOutlineTrendingUp />
-                </div>
-                <div className="cm-sector-card-content">
-                  <h3 className="cm-sector-card-title">Equity Trading</h3>
-                  <p className="cm-sector-card-desc">
-                    Robust trading platforms and algorithms that ensure swift, secure, and efficient equity trade execution.
-                  </p>
-                </div>
-              </div>
+              <SectorCard
+                imageSrc="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&auto=format&fit=crop&q=60"
+                title="Equity Trading"
+                description="Robust trading platforms and algorithms that ensure swift, secure, and efficient equity trade execution."
+                icon={<HiOutlineTrendingUp />}
+              />
 
               {/* Card 2: Forex & Currency Markets */}
-              <div className="cm-sector-card">
-                <img
-                  src="/image/Hero Background2.png"
-                  alt="Forex & Currency Markets"
-                  className="cm-sector-bg-img"
-                />
-                <div className="cm-sector-overlay"></div>
-                <div className="cm-sector-icon-floating">
-                  <HiOutlineCurrencyDollar />
-                </div>
-                <div className="cm-sector-card-content">
-                  <h3 className="cm-sector-card-title">Forex & Currency Markets</h3>
-                  <p className="cm-sector-card-desc">
-                    Comprehensive Forex solutions for seamless global currency exchange and risk mitigation.
-                  </p>
-                </div>
-              </div>
+              <SectorCard
+                imageSrc="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=1920&auto=format&fit=crop&q=80"
+                title="Forex & Currency Markets"
+                description="Comprehensive Forex solutions for seamless global currency exchange and risk mitigation."
+                icon={<HiOutlineCurrencyDollar />}
+              />
 
               {/* Card 3: Commodities Trading */}
-              <div className="cm-sector-card">
-                <img
-                  src="/image/Hero Background.png"
-                  alt="Commodities Trading"
-                  className="cm-sector-bg-img"
-                />
-                <div className="cm-sector-overlay"></div>
-                <div className="cm-sector-icon-floating">
-                  <HiOutlineChartBar />
-                </div>
-                <div className="cm-sector-card-content">
-                  <h3 className="cm-sector-card-title">Commodities Trading</h3>
-                  <p className="cm-sector-card-desc">
-                    Powerful tools that support real-time trading, data analysis, and execution in commodity markets.
-                  </p>
-                </div>
-              </div>
+              <SectorCard
+                imageSrc="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=60"
+                title="Commodities Trading"
+                description="Powerful tools that support real-time trading, data analysis, and execution in commodity markets."
+                icon={<HiOutlineChartBar />}
+              />
             </div>
           </div>
         </div>
@@ -340,7 +308,7 @@ const CapitalMarkets: React.FC = () => {
 
             <div className="cm-expertise-image-wrap">
               <img
-                src="/image/hero-person.png"
+                src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=800&auto=format&fit=crop&q=60"
                 alt="Capital Markets Stock Analysis"
                 className="cm-expertise-img"
               />

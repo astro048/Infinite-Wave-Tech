@@ -9,49 +9,138 @@ const EnterpriseTechnology: React.FC = () => {
 
   return (
     <div className="et-page-container">
-      {/* 1. Hero / Industries Section */}
-      <section className="et-hero-section">
-        <div className="et-hero-content">
-          <p className="et-hero-text">
-            From retail to investment banking, we deliver secure, scalable software solutions tailored to every facet of the banking ecosystem — enabling innovation, compliance, and growth.
+      {/* 1. Hero Section */}
+      <section className="et-hero-section-new">
+        <div className="et-hero-overlay-new"></div>
+        <div className="et-hero-content-new">
+          <div className="et-tag et-tag-dark">Industries</div>
+          <h1 className="et-hero-title-new">Enterprise Technology</h1>
+          <p className="et-hero-text-new">
+            We deliver enterprise technology solutions that empower businesses to scale, innovate, and stay ahead — backed by robust, agile, and future-ready digital infrastructure.
           </p>
-          <div className="et-hero-actions">
-            <Link to="/industries" className="et-btn-outline">View All Industries</Link>
-            <Link to="/contact" className="et-btn-primary">Contact Us</Link>
-          </div>
         </div>
-        <div className="et-hero-cards">
-          {/* Card 1 */}
-          <div className="et-hero-card">
-            <div className="et-hero-card-overlay"></div>
-            <img src="/image/Hero Background2.png" alt="Finance and Banking" className="et-hero-card-img" />
-            <div className="et-hero-card-content">
-              <h3>Finance and Banking</h3>
-              <p>Secure and scalable systems for smarter transactions, compliance, and real-time decision-making.</p>
+      </section>
+
+      {/* 2. Overview Section */}
+      <section className="et-overview-section">
+        <div className="et-container">
+          <div className="et-tag">Overview</div>
+          <h2 className="et-section-title">
+            Expert IT services for the Enterprise Technology Industry
+          </h2>
+          <p className="et-overview-desc">
+            We provide enterprise grade IT solutions tailored to meet the dynamic needs of the enterprise technology space — ensuring seamless integration, scalable infrastructure, robust security, and data-driven growth.
+          </p>
+
+          <div className="et-overview-grid">
+            <div className="et-overview-card">
+              <h4 className="et-overview-card-title">CX</h4>
+              <p className="et-overview-card-text">
+                Improve the user experience and customer satisfaction by leveraging AI, automation, and intuitive design to create personalized, user-centric interfaces.
+              </p>
             </div>
-          </div>
-          {/* Card 2 */}
-          <div className="et-hero-card">
-            <div className="et-hero-card-overlay"></div>
-            <img src="/image/Hero Background2.png" alt="Healthcare & Life Sciences" className="et-hero-card-img" />
-            <div className="et-hero-card-content">
-              <h3>Healthcare & Life Sciences</h3>
-              <p>Tech-driven care solutions that enhance patient outcomes and ensure regulatory compliance.</p>
+            <div className="et-overview-card">
+              <h4 className="et-overview-card-title">Scalability</h4>
+              <p className="et-overview-card-text">
+                Develop robust applications that can effortlessly adapt and expand in response to increasing user demands and evolving business needs.
+              </p>
             </div>
-          </div>
-          {/* Card 3 */}
-          <div className="et-hero-card">
-            <div className="et-hero-card-overlay"></div>
-            <img src="/image/Hero Background2.png" alt="Manufacturing & Supply Chain" className="et-hero-card-img" />
-            <div className="et-hero-card-content">
-              <h3>Manufacturing & Supply Chain</h3>
-              <p>Smart systems to streamline production, inventory, and logistics for maximum efficiency.</p>
+            <div className="et-overview-card">
+              <h4 className="et-overview-card-title">Security</h4>
+              <p className="et-overview-card-text">
+                Implement multi-layered security measures and compliance protocols (e.g., GDPR, HIPAA) to protect sensitive data and prevent unauthorized access.
+              </p>
+            </div>
+            <div className="et-overview-card">
+              <h4 className="et-overview-card-title">Data Analytics</h4>
+              <p className="et-overview-card-text">
+                Capitalize on data-driven insights to uncover new revenue opportunities, optimize operational efficiency, and identify strategic market trends.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 2. Benefits Section */}
+      {/* 3. Industries Served Section */}
+      <section className="et-industries-served-section">
+        <div className="et-container">
+          <div className="et-industries-served-split">
+            <div className="et-industries-served-left">
+              <div className="et-tag et-tag-dark">Industries</div>
+              <h2 className="et-section-title et-text-white">
+                The industry sectors we served include
+              </h2>
+              <p className="et-industries-served-desc">
+                From retail to investment banking, we deliver secure, scalable software solutions tailored to every facet of the banking ecosystem — enabling innovation, compliance, and growth.
+              </p>
+              <div className="et-hero-actions">
+                <Link to="/industries" className="et-btn-outline">View All Industries</Link>
+                <Link to="/contact" className="et-btn-primary">Contact Us</Link>
+              </div>
+            </div>
+            <div className="et-industries-served-right">
+              <div className="et-carousel-controls">
+                <button className="et-carousel-btn">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+                <button className="et-carousel-btn">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+              <div className="et-hero-cards">
+                {/* Card 1 */}
+                <div className="et-hero-card">
+                  <div className="et-hero-card-overlay"></div>
+                  <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3" alt="Finance and Banking" className="et-hero-card-img" />
+                  <div className="et-hero-card-content">
+                    <div className="et-hero-card-icon">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                      </svg>
+                    </div>
+                    <h3>Finance and Banking</h3>
+                    <p>Secure and scalable systems for smarter transactions, compliance, and real-time decision-making.</p>
+                  </div>
+                </div>
+                {/* Card 2 */}
+                <div className="et-hero-card">
+                  <div className="et-hero-card-overlay"></div>
+                  <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3" alt="Healthcare & Life Sciences" className="et-hero-card-img" />
+                  <div className="et-hero-card-content">
+                    <div className="et-hero-card-icon">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                      </svg>
+                    </div>
+                    <h3>Healthcare & Life Sciences</h3>
+                    <p>Tech-driven care solutions that enhance patient outcomes and ensure regulatory compliance.</p>
+                  </div>
+                </div>
+                {/* Card 3 */}
+                <div className="et-hero-card">
+                  <div className="et-hero-card-overlay"></div>
+                  <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3" alt="Manufacturing & Supply Chain" className="et-hero-card-img" />
+                  <div className="et-hero-card-content">
+                    <div className="et-hero-card-icon">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                      </svg>
+                    </div>
+                    <h3>Manufacturing & Supply Chain</h3>
+                    <p>Smart systems to streamline production, inventory, and logistics for maximum efficiency.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 4. Benefits Section */}
       <section className="et-benefits-section">
         <div className="et-container">
           <div className="et-tag">Benefits to enterprise technology on</div>
@@ -112,7 +201,7 @@ const EnterpriseTechnology: React.FC = () => {
         </div>
       </section>
 
-      {/* 3. Delivery Section */}
+      {/* 5. Delivery Section */}
       <section className="et-delivery-section">
         <div className="et-container et-delivery-split">
           <div className="et-delivery-left">
@@ -177,7 +266,7 @@ const EnterpriseTechnology: React.FC = () => {
         </div>
       </section>
 
-      {/* 4. Expertise Section */}
+      {/* 6. Expertise Section */}
       <section className="et-expertise-section">
         <div className="et-expertise-left">
           <div className="et-tag et-tag-dark">Expertise</div>
@@ -199,8 +288,7 @@ const EnterpriseTechnology: React.FC = () => {
           </div>
         </div>
         <div className="et-expertise-right">
-          {/* We use a placeholder image for now, can be replaced by user */}
-          <img src="/image/Hero Background2.png" alt="Enterprise Expertise" className="et-expertise-img" />
+          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3" alt="Enterprise Expertise" className="et-expertise-img" />
         </div>
       </section>
     </div>
@@ -208,3 +296,4 @@ const EnterpriseTechnology: React.FC = () => {
 };
 
 export default EnterpriseTechnology;
+
