@@ -102,6 +102,7 @@ const DropdownMenu = ({
 
 const Navbar: React.FC = () => {
     const [mobileOpen, setMobileOpen] = useState(false);
+    const [mobileDropdownOpen, setMobileDropdownOpen] = useState<string | null>(null);
     const [scrolled, setScrolled] = useState(false);
     const location = useLocation();
     const currentPath = location.pathname;
@@ -121,6 +122,7 @@ const Navbar: React.FC = () => {
 
     const handleNavClick = (link: any) => {
         setMobileOpen(false);
+        setMobileDropdownOpen(null);
 
         if (isHome && link.section) {
             const el = document.getElementById(link.section);
@@ -192,7 +194,10 @@ const Navbar: React.FC = () => {
                 <div className="navbar-toggle-container">
                     <button
                         className="navbar-toggle"
-                        onClick={() => setMobileOpen(!mobileOpen)}
+                        onClick={() => {
+                            setMobileOpen(!mobileOpen);
+                            if (mobileOpen) setMobileDropdownOpen(null);
+                        }}
                     >
                         {mobileOpen ? <HiX className="navbar-toggle-icon" /> : <HiMenuAlt3 className="navbar-toggle-icon" />}
                     </button>
@@ -207,22 +212,28 @@ const Navbar: React.FC = () => {
                             <div key={link.label}>
                                 {link.dropdown ? (
                                     <div className="navbar-mobile-dropdown">
-                                        <div className="navbar-mobile-dropdown-header">
+                                        <div 
+                                            className="navbar-mobile-dropdown-header"
+                                            onClick={() => setMobileDropdownOpen(prev => prev === link.label ? null : link.label)}
+                                            style={{ cursor: 'pointer' }}
+                                        >
                                             {link.label}
-                                            <HiChevronDown className="dropdown-icon" />
+                                            <HiChevronDown className={`dropdown-icon ${mobileDropdownOpen === link.label ? 'rotate' : ''}`} />
                                         </div>
-                                        <div className="navbar-mobile-dropdown-menu">
-                                            {link.dropdown.map(subItem => (
-                                                <Link
-                                                    key={subItem.label}
-                                                    to={subItem.href}
-                                                    className={`navbar-mobile-sublink ${currentPath === subItem.href ? 'active' : ''}`}
-                                                    onClick={() => handleNavClick(subItem)}
-                                                >
-                                                    {subItem.label}
-                                                </Link>
-                                            ))}
-                                        </div>
+                                        {mobileDropdownOpen === link.label && (
+                                            <div className="navbar-mobile-dropdown-menu">
+                                                {link.dropdown.map(subItem => (
+                                                    <Link
+                                                        key={subItem.label}
+                                                        to={subItem.href}
+                                                        className={`navbar-mobile-sublink ${currentPath === subItem.href ? 'active' : ''}`}
+                                                        onClick={() => handleNavClick(subItem)}
+                                                    >
+                                                        {subItem.label}
+                                                    </Link>
+                                                ))}
+                                            </div>
+                                        )}
                                     </div>
                                 ) : (
                                     <Link
