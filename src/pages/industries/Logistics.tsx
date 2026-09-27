@@ -2,6 +2,7 @@ import React from 'react';
 import DynamicPageLayout from '../../components/dynamic/DynamicPageLayout';
 import { industriesData } from '../../data/industries';
 import '../../styles/Logistics.css';
+import Contact from '../../components/Contact';
 
 const Logistics: React.FC = () => {
   const data = industriesData['logistics'];
@@ -10,6 +11,7 @@ const Logistics: React.FC = () => {
   return (
     <div className="logistics-page">
       <DynamicPageLayout data={data} />
+      <Contact/>
     </div>
   );
 };

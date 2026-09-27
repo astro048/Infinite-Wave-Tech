@@ -2,6 +2,7 @@ import React from 'react';
 import DynamicPageLayout from '../../components/dynamic/DynamicPageLayout';
 import { servicePagesData } from '../../data/servicePages';
 import '../../styles/ITConsultancy.css';
+import Contact from '../../components/Contact';
 
 const ITConsultancy: React.FC = () => {
   const data = servicePagesData['it-consultancy'];
@@ -10,6 +11,7 @@ const ITConsultancy: React.FC = () => {
   return (
     <div className="it-consultancy-page">
       <DynamicPageLayout data={data} />
+      <Contact/>
     </div>
   );
 };

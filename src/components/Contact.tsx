@@ -3,6 +3,7 @@ import { HiOutlineMail } from 'react-icons/hi';
 import { RainbowButton } from './magicui/rainbow-button';
 import '../Styles/Contact.css';
 
+
 const Contact: React.FC = () => {
     const [formData, setFormData] = useState({
         name: '',
@@ -121,8 +122,8 @@ const Contact: React.FC = () => {
                                             Phone <span className="text-red-500">*</span>
                                         </label>
                                         <div className="relative">
-                                            <div className="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none text-gray-500">
-                                                <span className="text-base mr-1">🇮🇳</span>
+                                            <div className="absolute inset-y-0 left-0 flex items-center pl-4 text-gray-500 pointer-events-none">
+                                                <span className="mr-1 text-base">🇮🇳</span>
                                                 <span className="text-xs">▼</span>
                                             </div>
                                             <input

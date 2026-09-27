@@ -289,7 +289,7 @@
 .cm-sectors-cards-row {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 50px;
+  gap: 24px;
 
 }
 
@@ -300,6 +300,9 @@
 }
 
 @media (min-width: 1024px) {
+  .cm-sectors-section .cm-container {
+    max-width: 1350px;
+  }
   .cm-sectors-cards-row {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -560,13 +563,17 @@
 }
 
 /* 6. Expertise & Stats Banner (Dark Half / Image Half) */
+.expertise-section {
+  overflow: hidden;
+}
+
 .cm-expertise-banner {
   background-color: #080c16;
   color: #ffffff;
   overflow: hidden;
-  border-radius: var(--radius-2xl);
+  /* border-radius: var(--radius-2xl); */
   margin: 48px auto 96px;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
   border: 1px solid rgba(255, 255, 255, 0.08);
 }

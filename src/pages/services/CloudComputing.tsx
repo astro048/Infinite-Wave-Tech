@@ -2,6 +2,7 @@ import React from 'react';
 import DynamicPageLayout from '../../components/dynamic/DynamicPageLayout';
 import { servicePagesData } from '../../data/servicePages';
 import '../../styles/CloudComputing.css';
+import Contact from '../../components/Contact';
 
 const CloudComputing: React.FC = () => {
   const data = servicePagesData['cloud-computing'];
@@ -10,6 +11,7 @@ const CloudComputing: React.FC = () => {
   return (
     <div className="cloud-computing-page">
       <DynamicPageLayout data={data} />
+      <Contact/>
     </div>
   );
 };

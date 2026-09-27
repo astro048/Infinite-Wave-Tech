@@ -2,6 +2,7 @@ import React from 'react';
 import DynamicPageLayout from '../../components/dynamic/DynamicPageLayout';
 import { industriesData } from '../../data/industries';
 import '../../styles/Manufacturing.css';
+import Contact from '../../components/Contact';
 
 const Manufacturing: React.FC = () => {
   const data = industriesData['manufacturing'];
@@ -10,6 +11,7 @@ const Manufacturing: React.FC = () => {
   return (
     <div className="manufacturing-page">
       <DynamicPageLayout data={data} />
+      <Contact />
     </div>
   );
 };

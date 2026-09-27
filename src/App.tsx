@@ -28,6 +28,9 @@ import AIDevOps from './pages/services/AIDevOps';
 // Technology Page
 import Technology from './pages/technology/Technology';
 
+// Careers Page
+import Careers from './pages/Careers';
+
 // Scroll to top on route change
 function ScrollToTop() {
     const { pathname } = useLocation();
@@ -48,6 +51,7 @@ function App() {
                     <Route path="/services" element={<ServicesPage />} />
                     <Route path="/about" element={<AboutPage />} />
                     <Route path="/contact" element={<ContactPage />} />
+                    <Route path="/careers" element={<Careers />} />
 
                     {/* Industry Routes */}
                     <Route path="/industries/banking" element={<Banking />} />

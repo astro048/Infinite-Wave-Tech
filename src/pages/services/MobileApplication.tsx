@@ -2,6 +2,7 @@ import React from 'react';
 import DynamicPageLayout from '../../components/dynamic/DynamicPageLayout';
 import { servicePagesData } from '../../data/servicePages';
 import '../../styles/MobileApplication.css';
+import Contact from '../../components/Contact';
 
 const MobileApplication: React.FC = () => {
   const data = servicePagesData['mobile-application'];
@@ -10,6 +11,7 @@ const MobileApplication: React.FC = () => {
   return (
     <div className="mobile-application-page">
       <DynamicPageLayout data={data} />
+      <Contact/>
     </div>
   );
 };

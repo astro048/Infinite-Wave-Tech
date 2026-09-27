@@ -46,12 +46,11 @@
   background-size: cover;
   background-position: center;
   color: var(--color-text-white);
-  padding: 128px 24px 96px;
+  padding: 188px 24px 96px;
   min-height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
 }
 
 .et-hero-overlay-new {
@@ -64,8 +63,8 @@
 .et-hero-content-new {
   position: relative;
   z-index: 2;
-  max-width: 800px;
   margin: 0 auto;
+  max-width: 1200px;
 }
 
 .et-hero-title-new {
@@ -79,6 +78,7 @@
   font-size: 18.4px;
   line-height: 1.6;
   color: var(--color-text-gray-100);
+  width: 60%;
 }
 
 /* 2. Overview Section */

@@ -132,7 +132,7 @@ const CapitalMarkets: React.FC = () => {
               <p className="cm-sectors-lead">
                 From retail to investment banking, we deliver secure, scalable software solutions tailored to every facet of the banking ecosystem — enabling innovation, compliance, and growth.
               </p>
-              
+
               <div className="cm-sectors-actions">
                 <Link to="/services/custom-software" className="cm-btn-dark-outline">
                   View All Industries
@@ -147,7 +147,7 @@ const CapitalMarkets: React.FC = () => {
             <div className="cm-sectors-cards-row">
               {/* Card 1: Equity Trading */}
               <SectorCard
-                imageSrc="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&auto=format&fit=crop&q=60"
+                imageSrc="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&auto=format&fit=crop&q=80"
                 title="Equity Trading"
                 description="Robust trading platforms and algorithms that ensure swift, secure, and efficient equity trade execution."
                 icon={<HiOutlineTrendingUp />}
@@ -155,7 +155,7 @@ const CapitalMarkets: React.FC = () => {
 
               {/* Card 2: Forex & Currency Markets */}
               <SectorCard
-                imageSrc="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=1920&auto=format&fit=crop&q=80"
+                imageSrc="https://images.unsplash.com/photo-1642543492481-44e81e3914a7?w=800&auto=format&fit=crop&q=80"
                 title="Forex & Currency Markets"
                 description="Comprehensive Forex solutions for seamless global currency exchange and risk mitigation."
                 icon={<HiOutlineCurrencyDollar />}
@@ -163,7 +163,7 @@ const CapitalMarkets: React.FC = () => {
 
               {/* Card 3: Commodities Trading */}
               <SectorCard
-                imageSrc="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=60"
+                imageSrc="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=800&auto=format&fit=crop&q=80"
                 title="Commodities Trading"
                 description="Powerful tools that support real-time trading, data analysis, and execution in commodity markets."
                 icon={<HiOutlineChartBar />}
@@ -283,7 +283,7 @@ const CapitalMarkets: React.FC = () => {
       </section>
 
       {/* 6. Expertise & Stats Banner (Dark Half / Image Half) */}
-      <section className="px-4">
+      <section className="expertise-section">
         <div className="cm-expertise-banner">
           <div className="cm-expertise-inner">
             <div className="cm-expertise-text">

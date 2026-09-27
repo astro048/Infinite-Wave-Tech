@@ -33,8 +33,8 @@ const navLinks = [
             { label: 'AI & DevOps', href: '/services/ai-devops' }
         ]
     },
-    { label: 'Technology', href: '/technology' },
-    { label: 'Careers', href: '/#careers', section: 'careers' },
+    // { label: 'Technology', href: '/technology' },
+    { label: 'Careers', href: '/careers', section: 'careers' },
 ];
 
 const DropdownMenu = ({
@@ -212,7 +212,7 @@ const Navbar: React.FC = () => {
                             <div key={link.label}>
                                 {link.dropdown ? (
                                     <div className="navbar-mobile-dropdown">
-                                        <div 
+                                        <div
                                             className="navbar-mobile-dropdown-header"
                                             onClick={() => setMobileDropdownOpen(prev => prev === link.label ? null : link.label)}
                                             style={{ cursor: 'pointer' }}

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../../Styles/EnterpriseTechnology.css';
+import Contact from '../../components/Contact';
 
 const EnterpriseTechnology: React.FC = () => {
   useEffect(() => {
@@ -95,7 +96,7 @@ const EnterpriseTechnology: React.FC = () => {
                 {/* Card 1 */}
                 <div className="et-hero-card">
                   <div className="et-hero-card-overlay"></div>
-                  <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3" alt="Finance and Banking" className="et-hero-card-img" />
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqtJSwe0KboRQkbhmC5oRpnQsvyz8a745nVP2FLf4OWQ&s=10" alt="Finance and Banking" className="et-hero-card-img" />
                   <div className="et-hero-card-content">
                     <div className="et-hero-card-icon">
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -288,9 +289,10 @@ const EnterpriseTechnology: React.FC = () => {
           </div>
         </div>
         <div className="et-expertise-right">
-          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3" alt="Enterprise Expertise" className="et-expertise-img" />
+          <img src="https://360.technology/images/visual-system/services-cinematic-hero.jpg" alt="Enterprise Expertise" className="et-expertise-img" />
         </div>
       </section>
+      <Contact/>
     </div>
   );
 };
